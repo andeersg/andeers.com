@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: $site-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+.thin {
+  font-weight: 300;
+}

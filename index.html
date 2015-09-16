@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home section">
+
+
+    {% for post in site.posts limit:10 %}
+      <article>
+        <span class="post-meta"><a href="{{ post.url | prepend: site.baseurl }}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+        </a></span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p>{{ post.excerpt }}</p>
+      </article>
+    {% endfor %}
+
+  <p><a href="{{ "/archive/" | prepend: site.baseurl }}">More posts</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

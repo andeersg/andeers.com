@@ -1,0 +1,58 @@
+/**
+ * @file
+ * Contains base styling for most HTML elements.
+ *
+ * This file should only have html-tags and no classes'n stuff like that.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: $fontSize_base;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #111;
+
+  margin: 0;
+  padding: 0;
+}
+
+h1 {}
+h2 {}
+h3 {}
+
+p {}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style-type: square;
+}
+ol {}
+
+pre {
+  background-color: #444;
+  padding: 15px;
+  code {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+code {
+  font-family: monospace;
+}
+
+blockquote {}
+cite {}
+
+input {}
+
+table {
+  width: 100%;
+}

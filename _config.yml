@@ -1,0 +1,22 @@
+# Site settings
+title: Andeers.com
+html_title: "Anders <span>Grendstadbakk</span>"
+email: anders.2205@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Norwegian developer, writing about web development and related
+  subjects.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://andeers.com" # the base hostname & protocol for your site
+twitter_username: andeersg
+github_username:  andeersg
+
+timezone: Europe/Berlin
+
+# We test this for now, and maybe we use dates.
+permalink: :title
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-redirect-from
