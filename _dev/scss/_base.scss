@@ -16,19 +16,33 @@ body {
   line-height: 1.5;
   color: #111;
 
+  border-top: 5px solid #4A8EC2;
+
   margin: 0;
   padding: 0;
 }
 
-h1 {}
-h2 {}
-h3 {}
+h1 {
+  font-weight: 300;
+}
+h2 {
+  font-weight: 300;
+}
+h3 {
+  font-weight: 300;
+}
 
-p {}
+p {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
 
 a {
   text-decoration: none;
   color: #333;
+  &:hover {
+    color: #0b97ef;
+  }
 }
 
 ul {

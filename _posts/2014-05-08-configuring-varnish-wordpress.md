@@ -13,7 +13,7 @@ tags:
 
 Varnish works by sitting in front of your web server, and giving the visitor a cached version of your page if it has any, and only if there is no cached version available send the visitor to the web server.
 
-But without some configuration you can&#8217;t access your admin area without going to the port your web server is listening (example.com:8080). The same for preview of posts.
+But without some configuration you can't access your admin area without going to the port your web server is listening (example.com:8080). The same for preview of posts.
 
 **Disclaimer:** I don&#8217;t know everything about Varnish so something here may not be done in the recommended way. But for me it works.
 

@@ -6,11 +6,12 @@ layout: default
 
 
     {% for post in site.posts limit:10 %}
-      <article>
-        <span class="post-meta"><a href="{{ post.url | prepend: site.baseurl }}">
+      <article class="post post--feed">
+        <div class="post__byline">
+          <span rel="author" class="author">Anders</span> // 
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
-        </a></span>
-        <h2>
+        </div>
+        <h2 class="post__title">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <p>{{ post.excerpt }}</p>
