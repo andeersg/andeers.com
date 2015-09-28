@@ -15,6 +15,19 @@
 
     {% include footer.html %}
     <script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script>
-  </body>
+    <script>
+      NodeList.prototype.forEach = Array.prototype.forEach;
 
+      var headlines = document.querySelectorAll('h1,h2').forEach(function(el) {
+        if (el.id !== '') {
+          var anchor = document.createElement('a');
+          anchor.classList.add('js-anchor');
+          anchor.href = '#' + el.id;
+          anchor.innerText = '#';
+          el.insertBefore(anchor, el.firstChild);
+          console.log('Inserting anchors');
+        }
+      });
+    </script>
+  </body>
 </html>

@@ -3,6 +3,7 @@
   &__title {
     margin-top: 0;
     font-weight: 300;
+    font-size: 42px;
   }
   &__byline {
     color: #565656;
@@ -10,5 +11,26 @@
     a {
       color: inherit;
     }
+  }
+}
+
+.js-anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+h1,
+h2,
+h3 {
+  &:hover .js-anchor {
+    padding-left: 8px;
+    margin-left: -30px;
+    text-decoration: none;
+    display: block;
   }
 }

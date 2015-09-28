@@ -13,10 +13,14 @@ github_username:  andeersg
 timezone: Europe/Berlin
 
 # We test this for now, and maybe we use dates.
-permalink: :title
+permalink: :year/:month/:title
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks", "with_toc_data"]
 
 gems:
   - jekyll-redirect-from

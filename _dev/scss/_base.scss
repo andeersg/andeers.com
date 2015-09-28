@@ -14,7 +14,7 @@ body {
   font-size: $fontSize_base;
   font-weight: 300;
   line-height: 1.5;
-  color: #111;
+  color: #404d5b;
 
   border-top: 5px solid #4A8EC2;
 
@@ -24,12 +24,18 @@ body {
 
 h1 {
   font-weight: 300;
+  position: relative;
+  font-size: 36px;
 }
 h2 {
   font-weight: 300;
+  position: relative;
+  font-size: 32px;
 }
 h3 {
   font-weight: 300;
+  position: relative;
+  font-size: 23px;
 }
 
 p {
@@ -39,7 +45,8 @@ p {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #404d5b;
+  font-weight: 400;
   &:hover {
     color: #0b97ef;
   }
@@ -51,15 +58,23 @@ ul {
 ol {}
 
 pre {
-  background-color: #444;
+  background-color: #f5f2f0;;
   padding: 15px;
+  overflow: scroll;
   code {
     font-size: 14px;
-    color: #fff;
+    color: #000;
   }
 }
 code {
   font-family: monospace;
+}
+:not(pre) > code {
+  background-color: #e2e2e2;
+  color: #333;
+  padding: 0.2em 5px;
+  font-size: 0.8em;
+  border-radius: 2px;
 }
 
 blockquote {}
