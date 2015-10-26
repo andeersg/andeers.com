@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
+  <head>
+  {% include common_head.html %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+  {% include analytics.html %}
+  </head>
 
   <body>
 

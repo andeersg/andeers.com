@@ -77,7 +77,13 @@ code {
   border-radius: 2px;
 }
 
-blockquote {}
+blockquote {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #111;
+}
 cite {}
 
 input {}
