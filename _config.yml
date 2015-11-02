@@ -24,3 +24,5 @@ redcarpet:
 
 gems:
   - jekyll-redirect-from
+
+exclude: [vendor]
