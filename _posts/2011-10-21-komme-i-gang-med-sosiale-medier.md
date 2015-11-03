@@ -67,4 +67,4 @@ Til slutt vil jeg si at det er viktig å **ikke** tenke at Sosiale medier skal v
 
 *Noe annet bedrifter på Facebook/Twitter må tenke på?*
 
- [1]: http://thisisanders.com/wp-content/uploads/2011/10/strategy.jpg
+ [1]: /wp-content/uploads/2011/10/strategy.jpg

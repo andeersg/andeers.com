@@ -26,7 +26,7 @@ Når man følger andre vil det de legger ut dukke opp i din nyhetstrøm. Etterhv
 **Reply** betyr jo rett oversatt &#8220;svar&#8221;, men i twitter-sammenheng betyr det faktisk å legge ut et eget innlegg hvor personen du svarer er tagget. Det vil si at svaret du gir vil være synlig for alle.
 
 <p style="text-align: center;">
-  <a href="http://thisisanders.com/wp-content/uploads/2011/10/androidTwitter.jpg"><img class="aligncenter size-full wp-image-322" title="Twitter for Android" src="http://thisisanders.com/wp-content/uploads/2011/10/androidTwitter.jpg" alt="Twitter" width="500" height="333" /></a>
+  <a href="/wp-content/uploads/2011/10/androidTwitter.jpg"><img class="aligncenter size-full wp-image-322" title="Twitter for Android" src="/wp-content/uploads/2011/10/androidTwitter.jpg" alt="Twitter" width="500" height="333" /></a>
 </p>
 
 ## 2. Noen spennende personer å følge

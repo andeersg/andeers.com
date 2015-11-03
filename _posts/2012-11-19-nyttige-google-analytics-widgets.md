@@ -12,7 +12,7 @@ Google Analytics kommer med veldig gode widgets som standard, men man kan sette 
 
 For å lage egne widgets til Google Analytics må man trykke på fanen Startside (Home på engelsk) også trykke på &#8220;Ny oversikt&#8221; i venstremenyen. I vinduet som dukker opp velger du &#8220;Tomt lerret&#8221;, gir det et navn og trykker &#8220;Opprett oversiktspanel&#8221;.
 
-<img class="aligncenter size-large wp-image-740" title="google-analytics-new" src="http://thisisanders.com/wp-content/uploads/2012/11/google-analytics-new1-570x174.png" alt="Nytt lerret - Google Analytics" width="570" height="174" />
+<img class="aligncenter size-large wp-image-740" title="google-analytics-new" src="/wp-content/uploads/2012/11/google-analytics-new1-570x174.png" alt="Nytt lerret - Google Analytics" width="570" height="174" />
 
 Om du valgte &#8220;Tomt lerret&#8221; vil du automatisk få opp vinduet for å legge til en ny modul på siden.<!--more-->
 

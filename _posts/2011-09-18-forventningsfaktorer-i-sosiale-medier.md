@@ -39,7 +39,7 @@ Generelt kan man vel si at når bloggene blir brukt på gode måter med nyttige 
  [1]: http://pengeroglivet.blogs.com/ "Sparebank1"
  [2]: http://pengeroglivet.blogs.com/penger_og_livet/2011/09/kan-en-bank-svinge-rocke-eller-rappe.html "Banmkusikk på Spotify"
  [3]: http://open.spotify.com/user/chrisbros/playlist/7tMcDVn80k3Yfkdz4L8rrf "Bankmusikk"
- [4]: http://thisisanders.com/wp-content/uploads/2011/09/pengeroglivet1.png
+ [4]: /wp-content/uploads/2011/09/pengeroglivet1.png
  [5]: http://nrkbeta.no/ "NRKBeta"
  [6]: http://nrkbeta.no/2011/09/14/hvilken-vei-gar-egentlig-tallene/ "Hvilken vei går egentlig tallene?"
- [7]: http://thisisanders.com/wp-content/uploads/2011/09/nrkbeta1.png
+ [7]: /wp-content/uploads/2011/09/nrkbeta1.png

@@ -21,7 +21,7 @@ Alle appene til Apple har fått oppdaterte ikoner med et mye &#8220;flatere&#822
 
 Mine favoritter er: <span style="line-height: 13px;">Kalender, </span>Kalkulator, Passbook og Musikk. Og de verste syns jeg er Game Center og Safari.
 
-<img class="aligncenter size-full wp-image-798" alt="iOS7 Ikon" src="http://thisisanders.com/wp-content/uploads/2013/06/icons.png" width="411" height="130" />
+<img class="aligncenter size-full wp-image-798" alt="iOS7 Ikon" src="/wp-content/uploads/2013/06/icons.png" width="411" height="130" />
 
 ## Kontrollsenter
 

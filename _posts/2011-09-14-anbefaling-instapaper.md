@@ -8,7 +8,7 @@ pvc_views:
 categories:
   - Anbefalt
 ---
-**[Instapaper][1] gir deg muligheten til å lagre artikler[<img class="alignright size-full wp-image-203" title="InstapaperLogo" src="http://thisisanders.com/wp-content/uploads/2011/09/Skjermbilde-2011-09-14-kl.-09.55.12.png" alt="InstapaperLogo" width="203" height="52" />][2] du finner på nett på en enkel måte, spare deg for hundrevis av bokmerker og du slipper å fylle nettleseren med faner.**
+**[Instapaper][1] gir deg muligheten til å lagre artikler[<img class="alignright size-full wp-image-203" title="InstapaperLogo" src="/wp-content/uploads/2011/09/Skjermbilde-2011-09-14-kl.-09.55.12.png" alt="InstapaperLogo" width="203" height="52" />][2] du finner på nett på en enkel måte, spare deg for hundrevis av bokmerker og du slipper å fylle nettleseren med faner.**
 
 Jeg har en stor uvane, etter jeg tar en nettleser i bruk går det maks 3 dager så har jeg minimum 15 faner oppe. Som regel er det artikler jeg har planer om å lese, guider jeg skal følge eller noe annet jeg skal sjekke når jeg får bedre tid. Resultatet blir dermed at jeg etter hvert når fanene er så mange at man ikke lengre kan lese hva de inneholder, putter de sidene som jeg har tenkt å lese i bokmerker. Noe som resulterer i at jeg får hundrevis av bokmerker i forskjellige mapper.
 
@@ -22,4 +22,4 @@ Instapaper lagrer deretter siden i kontoen din, sånn at du bare kan logge inn o
 
  [1]: http://www.instapaper.com/ "Instapaper"
  [2]: http://www.instapaper.com/
- [3]: http://thisisanders.com/wp-content/uploads/2011/09/Skjermbilde-2011-09-14-kl.-09.48.21.png
+ [3]: /wp-content/uploads/2011/09/Skjermbilde-2011-09-14-kl.-09.48.21.png

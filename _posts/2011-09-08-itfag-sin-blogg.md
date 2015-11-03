@@ -40,7 +40,7 @@ Har du synspunkter rundt det jeg har skrevet? Sleng gjerne igjen en kommentar.
 
 Anders Grendstadbakk
 
- [1]: http://thisisanders.com/wp-content/uploads/2011/09/itfagBlogg.png
+ [1]: /wp-content/uploads/2011/09/itfagBlogg.png
  [2]: http://blogg.itfag.hist.no/2011/08/25/i-dag-har-jeg-ikke-gjort-noen-ting/ "Webinar om GTD"
  [3]: http://blogg.itfag.hist.no/2011/08/08/det-ma-v%C3%A6re-lov-a-kose-seg/ "Jenter og ingeniørstudier"
  [4]: http://www.wordpress.org "Wordpress.org"

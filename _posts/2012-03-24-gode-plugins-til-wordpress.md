@@ -14,11 +14,11 @@ tags:
 ---
 **Har du din egen WordPress-blogg på eget domene? I såfall finnes det tusenvis av plugins(innstikk) som kan gjøre hverdagen din enda bedre. Iallefall for bloggingen din.**
 
-[<img class="aligncenter size-full wp-image-604" title="wordpressplugins" src="http://thisisanders.com/wp-content/uploads/2012/03/wordpressplugins.png" alt="Screenshot of plugins" width="700" height="373" />][1]
+[<img class="aligncenter size-full wp-image-604" title="wordpressplugins" src="/wp-content/uploads/2012/03/wordpressplugins.png" alt="Screenshot of plugins" width="700" height="373" />][1]
 
 På [wordpress.org][2] finnes det per dags dato(20.03.12) 18.821 plugins. Det er plugins som kan  gjøre alt mulig for bloggen din, fra små ting som å legge til widgets, slideshows eller vise populære innlegg til mer avanserte ting som deling av kladder, spam-filter på kommentarer og muligheter for å lage forum av bloggen.
 
-<img class="alignright size-full wp-image-594" title="Sortbytags" src="http://thisisanders.com/wp-content/uploads/2012/03/sortbytags.png" alt="Screenshot from wordpress.org/extend" width="152" height="249" />
+<img class="alignright size-full wp-image-594" title="Sortbytags" src="/wp-content/uploads/2012/03/sortbytags.png" alt="Screenshot from wordpress.org/extend" width="152" height="249" />
 
 Ikke alle plugins som ligger der er like gode, enkelte fungerer ikke i det hele tatt. Dette ser man heldigvis godt da alle plugins får en vurdering basert på hva brukerne syns, en stjerne er lav kvalitet og fem stjerner er god kvalitet.
 
@@ -53,7 +53,7 @@ Med Share a draft får man sendt en epost til ønsket adresse med en link som ve
 
 Man har muligheter til å trekke tilbake tilgang om man ikke vil at noen skal kunne lese lengre og man kan forlenge tiden en person har tilgang. Man har altså full kontroll på tilgangen.
 
- [1]: http://thisisanders.com/wp-content/uploads/2012/03/wordpressplugins.png
+ [1]: /wp-content/uploads/2012/03/wordpressplugins.png
  [2]: http://wordpress.org/extend/plugins/ "WordPress Plugins"
  [3]: http://wordpress.org/extend/plugins/jetpack/ "Jetpack by WordPress.com - WordPress plugin"
  [4]: http://wordpress.org/extend/plugins/popular-posts-plugin/ "Popular Posts - WordPress plugin"

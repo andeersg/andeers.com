@@ -14,7 +14,7 @@ WordPress 3.6 har blitt tilgjengelig i betaversjon, og har man lyst kan man alle
 
 En av de største forandringene jeg la merke til er at &#8220;Post Formats&#8221; har fått et helt eget grensesnitt på sidene hvor man skriver innhold.<figure id="attachment_785" style="width: 510px;" class="wp-caption aligncenter">
 
-[<img class="size-full wp-image-785 " title="Nytt grensesnitt i WordPress 3.6" alt="Post format UI i WordPress 3.6" src="http://thisisanders.com/wp-content/uploads/2013/04/Skjermbilde-2013-04-10-kl.-14.04.40.png" width="510" height="161" />][2]<figcaption class="wp-caption-text">Nytt grensesnitt for å velge format.</figcaption></figure> 
+[<img class="size-full wp-image-785 " title="Nytt grensesnitt i WordPress 3.6" alt="Post format UI i WordPress 3.6" src="/wp-content/uploads/2013/04/Skjermbilde-2013-04-10-kl.-14.04.40.png" width="510" height="161" />][2]<figcaption class="wp-caption-text">Nytt grensesnitt for å velge format.</figcaption></figure> 
 
 Det som også skjer når man velger foreksempel &#8220;Sitat&#8221; er at man får frem felter som passer til formatet. Det kommer:
 
@@ -41,4 +41,4 @@ Det er mye spennende som skjer med WordPress og jeg gleder meg bare til å se hv
 Har du testet WordPress 3.6? Hva syns du? Liker du de nye grensesnittene?
 
  [1]: http://wordpress.org/extend/plugins/wordpress-beta-tester/ "WordPress Beta Tester"
- [2]: http://thisisanders.com/wp-content/uploads/2013/04/Skjermbilde-2013-04-10-kl.-14.04.40.png
+ [2]: /wp-content/uploads/2013/04/Skjermbilde-2013-04-10-kl.-14.04.40.png

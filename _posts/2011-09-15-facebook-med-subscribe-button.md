@@ -20,6 +20,6 @@ Jeg syns dette er en nyttig funksjon som gir mye muligheter for brukerne på Fac
 
 Hva syns du om funksjonen?
 
- [1]: http://thisisanders.com/wp-content/uploads/2011/09/Skjermbilde-2011-09-15-kl.-14.46.06.png
+ [1]: /wp-content/uploads/2011/09/Skjermbilde-2011-09-15-kl.-14.46.06.png
  [2]: http://www.facebook.com/about/subscribe "Subscribe"
  [3]: http://www.facebook.com/andeersg "Anders"
