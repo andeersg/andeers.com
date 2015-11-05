@@ -20,6 +20,4 @@ PHP ser jeg virkelig frem til å lære meg. Har brukt html/css og litt javascrip
 
 Ellers så begynner jo spørsmålet om hva som skal skje om ca ett år å komme, master eller jobb? Absolutt ikke godt å vite, men jeg tenker at det sikkert lønner seg å prøve å finne en master og ta denne.
 
-En annen ny ting er temaet jeg har på bloggen min. Jeg har valgt å kjøpe meg ett, og gikk for [Standard Theme][1]. Likte dette temaet veldig fra første gang jeg så det. Så nå blir det litt justeringer og fiksing til jeg blir helt fornøyd.
-
- [1]: http://standardtheme.com/
+En annen ny ting er temaet jeg har på bloggen min. Jeg har valgt å kjøpe meg ett, og gikk for Standard Theme. Likte dette temaet veldig fra første gang jeg så det. Så nå blir det litt justeringer og fiksing til jeg blir helt fornøyd.

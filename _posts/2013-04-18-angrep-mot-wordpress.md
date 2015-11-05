@@ -20,7 +20,7 @@ Ta det med ro, det er ikke vanskelig å løse dette problemet.
   * Logg inn med den nye brukeren og slett den gamle.
   * Da vil du få et spørsmål om hva du vil gjøre med postene til den gamle brukeren, du kan enten overføre de til den nye brukeren eller slette de.
 
-Da skal du ha fått deg en ny bruker med alle dine gamle innlegg <img src="http://andeers.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+Da skal du ha fått deg en ny bruker med alle dine gamle innlegg.
 
 ## Andre måter for å forhindre angrep mot WordPress
 

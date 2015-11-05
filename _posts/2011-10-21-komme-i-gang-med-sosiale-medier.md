@@ -28,7 +28,7 @@ Før man registrer seg på Facebook og Twitter er det veldig **viktig **å tenk
 
 Når du har tenkt gjennom og svart på alle spørsmålene her er det lurt å utarbeide en strategi for sosiale medier. Med en strategi har du full oversikt over planene for sosiale medier, noe som gir ansatte en enkel måte å sette seg inn i strategien på.<figure id="attachment_365" style="width: 558px;" class="wp-caption aligncenter">
 
-[<img class="size-large wp-image-365 " title="Strategy" src="http://andeers.com/wordpress/wp-content/uploads/2011/10/strategy-672x372.jpg" alt="Sjakk - Strategi" width="558" height="320" />][1]<figcaption class="wp-caption-text">Det er veldig viktig å ha en strategi</figcaption></figure> 
+[<img class="size-large wp-image-365 " title="Strategy" src="/wp-content/uploads/2011/10/strategy-672x372.jpg" alt="Sjakk - Strategi" width="558" height="320" />][1]<figcaption class="wp-caption-text">Det er veldig viktig å ha en strategi</figcaption></figure> 
 
 **2. Etablering**
 
