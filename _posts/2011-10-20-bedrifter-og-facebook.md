@@ -18,7 +18,7 @@ De fire siste årene har flere og flere av oss mennesker registrert oss og brukt
 
 Det finnes forskjellige måter en bedrift kan bruke Facebook på. Du kan bruke Facebook for å reklamere for produkter og fortelle om nyheter. Du kan bruke Facebook for å få tilbakemeldinger, ris og ros eller bruke det som enkel kundeservice. Facebook er også veldig grei om man har et budskap som man vil skal nås ut til mange. Det er mye større sjangse for at noen ser det på Facebook, enn at de ser det på hjemmesiden til bedriften.
 
-[Rimi][3] foreksempel lanserte for en stund siden appen Rimi+. En app som lar brukeren lage handlelister fra sortementet til Rimi. Samtidig oppdaterte de Facebooksiden sin og lagde seg [Twitterkonto][4]. På Facebook har de også opprettet en supportfunksjon for appen sin. Her kan brukerne stille spørsmål og beskrive sine problemer med appen samt hjelpe andre med problemer, Rimi er også veldig aktive selv med å hjelpe brukerne.
+Rimi foreksempel lanserte for en stund siden appen Rimi+. En app som lar brukeren lage handlelister fra sortementet til Rimi. Samtidig oppdaterte de Facebooksiden sin og lagde seg [Twitterkonto][4]. På Facebook har de også opprettet en supportfunksjon for appen sin. Her kan brukerne stille spørsmål og beskrive sine problemer med appen samt hjelpe andre med problemer, Rimi er også veldig aktive selv med å hjelpe brukerne.
 
 <!--more-->
 
@@ -44,7 +44,6 @@ En sånn oppførsel gir et veldig dårlig inntrykk av en bedrift, og er ikke en 
 
  [1]: http://facebook.com/
  [2]: http://www.synlighet.no/facebook/statistikk-antall-brukere/
- [3]: https://www.facebook.com/RimiNorge "Rimi Norge"
  [4]: http://twitter.com/RimiNorge "Rimi på Twitter"
  [5]: http://www.facebook.com/pages/Europris-Surnadal/151147641614180 "Europris Surnadal"
  [6]: http://www.facebook.com/sagatungrendahus "Sagatun Grendahus"

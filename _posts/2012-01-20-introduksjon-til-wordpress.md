@@ -35,7 +35,7 @@ Samtidig som WP.com har endel funksjonalitet WP.org ikke har, mangler også WP.c
 
   * Legge inn egne temaer (themes).
   * Installere plugins.
-  * Bruke verktøy som krever tilgang til kildekoden, f.eks Google Analytics<link>.
+  * Bruke verktøy som krever tilgang til kildekoden, f.eks Google Analytics.
 
 Selv om man ikke kan legge inn egne themes så har WP.com mange themes tilgjengelig, slik at man kan få en blogg med et personlig preg.
 

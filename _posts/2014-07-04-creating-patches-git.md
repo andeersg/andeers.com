@@ -47,7 +47,6 @@ And voila, you have a patch file with all your modifications.
 
 `git apply -v [patch-name.patch]` (this will apply your changes).<figure id="attachment_991" style="width: 327px;" class="wp-caption aligncenter">
 
-<img src="/wp-content/uploads/2014/06/Screenshot-2014-06-12-10.52.44.png" alt="Applying a patch" width="327" height="58" class="size-full wp-image-991" /><figcaption class="wp-caption-text">Applying a patch to a project.</figcaption></figure> 
 
 ## Why patches?
 

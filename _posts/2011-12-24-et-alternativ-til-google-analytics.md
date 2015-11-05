@@ -15,7 +15,7 @@ categories:
 
 Førsteinntrykket av det jeg ser er veldig bra. Clicky har et veldig oversiktlig og greit brukergrensesnitt.
 
-[<img class="aligncenter size-large wp-image-428" title="clickyScreen" src="/wp-content/uploads/2011/12/clickyScreen-620x335.png" alt="Clicky Dashboard" width="570" height="307" />][2]
+[<img class="aligncenter size-large wp-image-428" title="clickyScreen" src="/wp-content/uploads/2011/12/clickyScreen-672x372.png" alt="Clicky Dashboard" width="570" height="307" />][2]
 
 Clicky fokuserer veldig på &#8220;live&#8221;-resultater. De viser brukeren i sanntid hvem som er inne på siden. Jeg må si jeg ikke helt ser vitsen med det, de brukerne som er inne på siden akkurat nå får man ikke gjort så veldig mye med likevel. Skal man analysere en side må man se på den over tid.
 

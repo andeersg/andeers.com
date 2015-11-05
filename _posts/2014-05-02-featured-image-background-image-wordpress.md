@@ -84,6 +84,6 @@ If you don&#8217;t want those there you can safely remove them and keep all the 
   * Have a folder of images? Display them randomly.
   * Display different images based on the time of day.
   * Or different images for different seasons.
-  * Be creative <img src="http://andeers.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+  * Be creative.
 
  [1]: https://codex.wordpress.org/Custom_Backgrounds

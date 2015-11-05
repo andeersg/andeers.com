@@ -21,8 +21,3 @@ Det som er mest genialt er mulighetene til å skrive uten tilgang til internett.
 Ellers har man muligheten til å laste opp bilder, formatere teksten og legge til tags. Så man kan lage fullverdige blogginnlegg med mobilen.
 
 Personlig vil jeg nok si at jeg foretrekker å skrive på pc med litt større skjerm og bedre tastatur enn mobiler, men absolutt kjekt å ha om man føler for å kladde litt på et innlegg.
-
-[![Blogglisten][1]][2]
-
- [1]: http://www.blogglisten.no/connect/bb70fb8b21f3816938138f6e693fc0bc
- [2]: http://www.blogglisten.no

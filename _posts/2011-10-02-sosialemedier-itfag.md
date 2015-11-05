@@ -19,7 +19,6 @@ I Sosiale Medier er opplegget sånn at vi skriver alle oppgavene som blogginnleg
   * [http://andyarnt.blogspot.com][4]
   * [http://francisrath.wordpress.com][5]
   * [http://ballacks1981.blogspot.com][6]
-  * [http://breathingsf.blogspot.com][7]
   * [http://sosialegraff.blogspot.com][8]
   * [http://karolibo.wordpress.com][9]
   * [http://ln203d.wordpress.com][10]
@@ -36,7 +35,6 @@ Tilslutt må jeg si jeg gleder meg til å komme skikkelig i gang med dette faget
  [4]: http://andyarnt.blogspot.com/ "andyarnt"
  [5]: http://francisrath.wordpress.com/ "francisrath"
  [6]: http://ballacks1981.blogspot.com/ "ballacks1981"
- [7]: http://breathingsf.blogspot.com "breathingsf"
  [8]: http://sosialegraff.blogspot.com "sosialegraff"
  [9]: http://karolibo.wordpress.com "karolibo"
  [10]: http://ln203d.wordpress.com "ln203d"

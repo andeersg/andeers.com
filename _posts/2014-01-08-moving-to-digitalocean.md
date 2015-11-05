@@ -20,9 +20,8 @@ I choose nginx for my wordpress blog mostly because i was curious and wanted to 
 
 ## Ghost
 
-Ghost is a new blogging platform created by [John O&#8217;Nolan][1], it&#8217;s a very minimalistic blogging platform stripped of everything but the essentials for writing. You write your posts with markdown and you have a live preview on your right side. I have created a secondary blog you can [read here][2] with Ghost. Mostly for testing it, but also for giving me another opportunity to write.
+Ghost is a new blogging platform created by [John O&#8217;Nolan][1], it&#8217;s a very minimalistic blogging platform stripped of everything but the essentials for writing. You write your posts with markdown and you have a live preview on your right side.
 
 I must say i like messing around with the terminal and editing config files, so i think there may come  some posts about servers and setting up various stuff.
 
  [1]: http://john.onolan.org/ "John O'Nolan"
- [2]: http://thoughts.andeers.com "Thoughts by Anders"

@@ -10,7 +10,7 @@ pvc_views:
 categories:
   - School
 ---
-**[<img class="alignright size-thumbnail wp-image-186" title="itfagBlogg" src="http://andeers.com/wordpress/wp-content/uploads/2011/09/itfagBlogg-150x150.png" alt="itfagBlogg" width="150" height="150" />][1]Itfag er en blogg skrevet av lærere ved HiST. På bloggen deler de informasjon om fag de kjører, tips og triks innen teknologi og annen nyttig informasjon for it-studenter og andre interesserte.**
+**[<img class="alignright size-thumbnail wp-image-186" title="itfagBlogg" src="http://andeers.com/wp-content/uploads/2011/09/itfagBlogg-150x150.png" alt="itfagBlogg" width="150" height="150" />][1]Itfag er en blogg skrevet av lærere ved HiST. På bloggen deler de informasjon om fag de kjører, tips og triks innen teknologi og annen nyttig informasjon for it-studenter og andre interesserte.**
 
 Itfag-bloggen ble startet opp i Juni 2010, og har siden da vært en aktiv blogg med flere bidragsytere. Det er hovedsaklig lærere og ansatte ved Aitel som er forfattere. Bloggen inneholder mange artikler om fag man kan velge, erfaringer og oppgaver fra fagene, teknologi-tips og anbefalinger av programmer, metoder og operativsystem.
 

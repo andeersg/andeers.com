@@ -18,7 +18,7 @@ For å forandre på dette begynte jeg å søke litt rundt, og etter litt fant je
 
 Instapaper lagrer deretter siden i kontoen din, sånn at du bare kan logge inn og lese artiklene senere. Du har også mulighet til å laste ned artikler til Kindle eller lignende, noe som gir deg mulighet til å lese artikler uten internett.
 
-[<img class="alignleft size-medium wp-image-200" title="InstapaperScreen" src="http://andeers.com/wordpress/wp-content/uploads/2011/09/Skjermbilde-2011-09-14-kl.-09.48.21-300x187.png" alt="Instapaper Screenshot" width="300" height="187" />][3]
+[<img class="alignleft size-medium wp-image-200" title="InstapaperScreen" src="/wp-content/uploads/2011/09/Skjermbilde-2011-09-14-kl.-09.48.21-300x187.png" alt="Instapaper Screenshot" width="300" height="187" />][3]
 
  [1]: http://www.instapaper.com/ "Instapaper"
  [2]: http://www.instapaper.com/
