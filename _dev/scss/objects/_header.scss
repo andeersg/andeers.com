@@ -5,11 +5,19 @@
  * @todo Find a better name than 'site__header'.
  */
 .site {
-  &__header {
-    background-color: #F9F8F7;
-    padding-top: 70px;
-    padding-bottom: 70px;
+  &__tagline {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
   }
+}
+
+
+.o-branding {
+  background-color: #F9F8F7;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
   &__title {
     font-size: 42px;
     display: block;
@@ -17,16 +25,8 @@
     margin: 0;
     color: #3A3A4C;
     font-weight: 400;
-    span {
-      font-weight: 300;
-    }
     a {
       color: inherit;
     }
-  }
-  &__tagline {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 400;
   }
 }

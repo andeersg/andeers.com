@@ -8,7 +8,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
@@ -138,7 +138,6 @@ pre[class*="language-"] {
   -moz-tab-size: 4;
   tab-size: 4;
   -webkit-hyphens: none;
-  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none; }
 
@@ -238,27 +237,24 @@ pre[class*="language-"] {
  *
  * @todo Find a better name than 'site__header'.
  */
-.site__header {
-  background-color: #F9F8F7;
-  padding-top: 70px;
-  padding-bottom: 70px; }
-
-.site__title {
-  font-size: 42px;
-  display: block;
-  text-align: left;
-  margin: 0;
-  color: #3A3A4C;
-  font-weight: 400; }
-  .site__title span {
-    font-weight: 300; }
-  .site__title a {
-    color: inherit; }
-
 .site__tagline {
   margin: 0;
   font-size: 24px;
   font-weight: 400; }
+
+.o-branding {
+  background-color: #F9F8F7;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .o-branding__title {
+    font-size: 42px;
+    display: block;
+    text-align: left;
+    margin: 0;
+    color: #3A3A4C;
+    font-weight: 400; }
+    .o-branding__title a {
+      color: inherit; }
 
 .site__footer {
   border-top: 1px solid #e8e8e8;

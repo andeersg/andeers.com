@@ -17,6 +17,15 @@ gulp.task('js', function() {
     .pipe(gulp.dest('assets/js'));
 });
 
+gulp.task('jekyll', ['css'], function (gulpCallBack){
+  var spawn = require('child_process').spawn;
+  var jekyll = spawn('jekyll', ['build', '--incremental'], {stdio: 'inherit'});
+
+  jekyll.on('exit', function(code) {
+    gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
+  });
+});
+
 // Default task
 gulp.task('default', ['css', 'js']); // , 'images'
 
@@ -24,7 +33,7 @@ gulp.task('default', ['css', 'js']); // , 'images'
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('_dev/scss/**/*.scss', ['css']);
+  gulp.watch('_dev/scss/**/*.scss', ['css', 'jekyll']);
 
   // Watch .js files
   gulp.watch('_dev/js/*.js', ['js']);

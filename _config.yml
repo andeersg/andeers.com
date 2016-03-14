@@ -1,6 +1,6 @@
 # Site settings
 title: Andeers.com
-html_title: "Anders <span>Grendstadbakk</span>"
+html_title: "Anders <span class='thin'>Grendstadbakk</span>"
 email: anders.2205@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Norwegian developer, writing about web development and related
@@ -16,13 +16,9 @@ timezone: Europe/Berlin
 permalink: :year/:month/:title
 
 # Build settings
-markdown: redcarpet
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
+kramdown:
+  input: GFM
 
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks", "with_toc_data"]
+exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json, gulpfile.js, README.md]
 
-gems:
-  - jekyll-redirect-from
-
-exclude: [vendor]
+auto: false
