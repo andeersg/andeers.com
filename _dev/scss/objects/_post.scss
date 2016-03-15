@@ -11,6 +11,7 @@
   &__byline {
     color: #565656;
     font-size: 16px;
+    margin-bottom: 10px;
     a {
       color: inherit;
     }
@@ -20,7 +21,25 @@
       margin-bottom: 0;
     }
   }
+
+  &--feed {
+    .post {
+      &__title {
+        a {
+          color: inherit;
+          font-weight: inherit;
+          &:hover {
+            color: #b6422b;
+          }
+        }
+      }
+    }
+  }
+  &__content {}
 }
+
+
+
 
 .js-anchor {
   position: absolute;

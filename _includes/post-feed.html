@@ -1,0 +1,11 @@
+<article class="post post--feed">
+  <header class="post__header">
+  <h2 class="post__title">
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <div class="post__byline">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+  </div>
+  </header>
+  <p>{{ post.excerpt }}</p>
+</article>

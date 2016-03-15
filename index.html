@@ -4,19 +4,9 @@ layout: default
 
 <div class="home section">
     {% for post in site.posts limit:10 %}
-      <article class="post post--feed">
-        <div class="post__byline">
-          <span rel="author" class="author">Anders</span> // 
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
-        </div>
-        <h2 class="post__title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p>{{ post.excerpt }}</p>
-      </article>
+      {% include post-feed.html post=post %}
     {% endfor %}
 
-  <p><a href="{{ "/archive/" | prepend: site.baseurl }}">More posts</a></p>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>
 
 </div>

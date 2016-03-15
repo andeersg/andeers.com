@@ -22,6 +22,7 @@ The snippet should work in Internet Explorer 9 and up and the other major browse
   padding-right: calc((100vw - 100%)/2);
 }
 ```
+{: .language-scss}
 
 ## The how
 

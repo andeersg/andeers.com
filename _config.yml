@@ -22,3 +22,6 @@ kramdown:
 exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json, gulpfile.js, README.md]
 
 auto: false
+
+gems:
+  - jekyll-feed

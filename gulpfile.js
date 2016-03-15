@@ -33,7 +33,7 @@ gulp.task('default', ['css', 'js']); // , 'images'
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('_dev/scss/**/*.scss', ['css', 'jekyll']);
+  gulp.watch('_dev/scss/**/*.scss', ['css']);
 
   // Watch .js files
   gulp.watch('_dev/js/*.js', ['js']);

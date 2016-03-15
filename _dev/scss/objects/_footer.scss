@@ -1,42 +1,91 @@
-.site__footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
-  .footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+.o-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+.o-social {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  &__icon {
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 130px;
+    padding: 30px;
+    box-shadow: none;
   }
-  
-  .contact-list,
-  .social-media-list {
-    list-style: none;
-    margin-left: 0;
+  .icon path {
+    transition: fill .4s ease;
   }
-  
-  .footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-  }
-  
-  .footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-  
-  .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-  }
-  
-  .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-  }
-  
-  .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+  .icon:hover path {
+    fill: #fff;
   }
 }
+
+.icon-heart {
+  fill: #e87;
+  animation: heartbeat 1300ms ease 3s infinite normal;
+}
+.madeby {
+  font-size: 0.8rem;
+  color: #a7a2a2;
+  text-align: center;
+  padding: 0;
+  svg {
+    height: 1em;
+    width: auto;
+    display: inline;
+  }
+}
+
+@keyframes heartbeat {
+  // http://codepen.io/jlong/pen/KBhDf
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes square-anim {
+  // http://codepen.io/suez/pen/ZGWbmE
+  12% {
+    stroke-dashoffset: 0;
+  }
+  43% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  85% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes background-test {
+  0%{
+    background-position:0% 50%;
+  }
+  100%{
+    background-position:100% 50%;
+  }
+}
+
+
+
+

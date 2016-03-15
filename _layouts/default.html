@@ -15,20 +15,42 @@
     </div>
 
     {% include footer.html %}
-    <script src="{{ "/assets/js/prism.js" | prepend: site.baseurl }}"></script>
-    <script>
-      NodeList.prototype.forEach = Array.prototype.forEach;
 
-      var headlines = document.querySelectorAll('h1,h2').forEach(function(el) {
-        if (el.id !== '') {
-          var anchor = document.createElement('a');
-          anchor.classList.add('js-anchor');
-          anchor.href = '#' + el.id;
-          anchor.innerText = '#';
-          el.insertBefore(anchor, el.firstChild);
-          console.log('Inserting anchors');
+    <script>
+      if (document.querySelectorAll('pre').length) {
+        load.js('/assets/js/prism.js', function(err, url) {
+          Prism.highlightAll();
+        });
+      }
+      (function() {
+        var ticking = false;
+        var latestKnownScrollY = 0;
+        function checkScroll() {
+          latestKnownScrollY = window.scrollY;
+          requestTick();
         }
-      });
+        function update() {
+          ticking = false;
+          var currentScrollY = latestKnownScrollY + window.innerHeight;
+          if (currentScrollY == document.body.offsetHeight) {
+            {% if jekyll.environment != 'development' %}
+            ga('send', 'event', {
+              eventCategory: 'Page Activity',
+              eventAction: 'scroll',
+              eventLabel: '100%'
+            });
+            {% endif %}
+          }
+     
+        };
+        function requestTick() {
+      	  if(!ticking) {
+      		  requestAnimationFrame(update);
+      	  }
+          ticking = true;
+        };
+        window.addEventListener('scroll', checkScroll, false);
+      })();
     </script>
   </body>
 </html>

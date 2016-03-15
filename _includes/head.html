@@ -18,6 +18,8 @@
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
 
+{% feed_meta %}
+
 {% if jekyll.environment != 'development' %}
 <script>
   // jscs:disable
@@ -31,3 +33,37 @@
   // jscs:enable
 </script>
 {% endif %}
+<script>
+  var load = (function() {
+    function _load(tag) {
+      return function(url, callback) {
+        var element = document.createElement(tag);
+        var parent = 'body';
+        var attr = 'src';
+        element.onload = function() {
+          callback(null, url);
+        };
+        element.onerror = function() {
+          callback('Something went wrong');
+        };
+        switch(tag) {
+          case 'script':
+            element.async = true;
+            break;
+          case 'link':
+            element.type = 'text/css';
+            element.rel = 'stylesheet';
+            attr = 'href';
+            parent = 'head';
+        }
+        element[attr] = url;
+        document[parent].appendChild(element);
+      };
+    }
+    return {
+      css: _load('link'),
+      js: _load('script'),
+      img: _load('img')
+    }
+  })();
+</script>
