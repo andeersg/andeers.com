@@ -26,6 +26,13 @@ $on-laptop:        800px;
 $site-width: 760px;
 
 
+
+// FONT
+
+// Font weights
+$font-weight-normal: 300;
+$font-weight-bold: 400;
+
 // COLORS
 
 // Primary colors
@@ -34,3 +41,17 @@ $color-primary-2-lighter: #7CD4E8;
 $color-primary-2: #58CAE7;
 $color-primary-2-darker: #35ADC9;
 $color-primary-3: #243C4B;
+
+// GRID
+$grid-width-wide: 1400px;
+$grid-width: 1200px;
+$grid-width-narrow: 1000px;
+
+//$grid-gutter: $baseline-space * 3;
+
+$break-xsmall: 350px;
+$break-small: 600px;
+$break-medium: 750px;
+$break-large: 1000px;
+$break-desktop: $grid-width;
+$break-xlarge: $grid-width-wide;

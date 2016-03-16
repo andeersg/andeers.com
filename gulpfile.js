@@ -2,11 +2,24 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var jshint = require('gulp-jshint');
+var minifyInline = require('gulp-minify-inline');
+var uglify = require('gulp-uglify');
+var cleanCSS = require('gulp-clean-css');
+
+var minifyOptions = {
+  jsSelector: 'script[data-minify="true"]',
+  cssSelector: 'style[data-minify="true"]',
+  js: {
+  "vars": [ "load" ]
+  }
+};
+
 
 gulp.task('css', function () {
   return gulp.src('_dev/scss/**/*.scss')
     .pipe(sass())
     .pipe(autoprefixer({browsers: ['last 2 versions', 'Explorer 9']}))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('assets/css'));
 });
 
@@ -26,6 +39,14 @@ gulp.task('jekyll', ['css'], function (gulpCallBack){
   });
 });
 
+gulp.task('minify-inline', function() {
+  gulp.src('_pre_build/**/*.html')
+    .pipe(minifyInline(minifyOptions)).on('error', function(err) {
+      console.log(err);
+    })
+    .pipe(gulp.dest('./'))
+});
+
 // Default task
 gulp.task('default', ['css', 'js']); // , 'images'
 
@@ -37,4 +58,6 @@ gulp.task('watch', function() {
 
   // Watch .js files
   gulp.watch('_dev/js/*.js', ['js']);
+
+  gulp.watch('_pre_build/**/*.html', ['minify-inline']);
 });

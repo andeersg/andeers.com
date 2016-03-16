@@ -1,0 +1,20 @@
+@mixin break($media) {
+	@if $media == xlarge {
+		@media only screen and (min-width: $break-xlarge) { @content; }
+	}
+	@if $media == desktop {
+		@media only screen and (min-width: 0) and (max-width: $break-desktop) { @content; }
+	}
+	@if $media == large {
+		@media only screen and (min-width: 0) and (max-width: $break-large) { @content; }
+	}
+	@if $media == medium {
+		@media only screen and (min-width: 0) and (max-width: $break-medium) { @content; }
+	}
+	@if $media == small {
+		@media only screen and (min-width: 0) and (max-width: $break-small) { @content; }
+	}
+	@else if $media == xsmall {
+		@media only screen and (max-width: $break-xsmall) { @content; }
+	}
+}

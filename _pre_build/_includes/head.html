@@ -1,0 +1,105 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
+
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@andeersg">
+<meta property="twitter:creator" content="@andeersg">
+
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
+
+{% feed_meta %}
+
+{% if jekyll.environment != 'development' %}
+<script type="text/javascript">
+  // jscs:disable
+  // feed_meta
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-23774700-2', 'auto');
+  ga('send', 'pageview');
+  // jscs:enable
+</script>
+{% endif %}
+<script type="text/javascript" data-minify="true">
+  var supportsWoff2 = (function( win ){
+	if( !( "FontFace" in win ) ) {return false;}
+	var f = new FontFace('t', 'url( "data:application/font-woff2;base64,d09GMgABAAAAAAIkAAoAAAAABVwAAAHcAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlYAgloKLEoBNgIkAxgLDgAEIAWDcgc1G7IEyB6SJAFID5YA3nAHC6h4+H7s27nP1kTyOoQkGuJWtNGIJKYznRI3VEL7IaHq985ZUuKryZKcAtJsi5eULwUybm9KzajBBhywZ5ZwoJNuwDX5C/xBjvz5DbsoNsvG1NGQiqp0NMLZ7JlnW+5MaM3HwcHheUQeiVokekHkn/FRdefvJaTp2PczN+I1Sc3k9VuX51Tb0Tqqf1deVXGdJsDOhz0/EffMOPOzHNH06pYkDDjs+P8fb/z/8n9Iq8ITzWywkP6PBMMN9L/O7vY2FNoTAkp5PpD6g1nV9WmyQnM5uPpAMHR2fe06jbfvzPriekVTQxC6lpKr43oDtRZfCATl5OVAUKykqwm9o8R/kg37cxa6eZikS7cjK4aIwoyh6jOFplhFrz2b833G3Jii9AjDUiAZ9AxZtxdEYV6imvRF0+0Nej3wu6nPZrTLh81AVcV3kmMVdQj6Qbe9qetzbuDZ7vXOlRrqooFSxCv6SfrDICA6rnHZXQPVcUHJYGcoqa3jVH7ATrjWBNYYkEqF3RFpVIl0q2JvMOJd7/TyjXHw2NyAuJpNaEbz8RTEVtCbSH7JrwQQOqwGl7sTUOtdBZIY2DKqKlvOmPvUxJaURAZZcviTT0SKHCXqzwc=" ) format( "woff2" )', {});
+	f.load()['catch'](function() {});
+	  return f.status == 'loading' || f.status == 'loaded';
+  })( this );
+
+  var load = (function() {
+    function _load(tag) {
+      return function(url, callback) {
+        var e = document.createElement(tag);
+        var parent = 'body';
+        var attr = 'src';
+        e.onload = function() {
+          if (typeof callback == 'function') {
+            callback(null, url);
+          }
+        };
+        e.onerror = function() {
+          if (typeof callback == 'function') {
+            callback('Something went wrong');
+          }
+        };
+        switch(tag) {
+          case 'script':
+            e.async = true;
+            break;
+          case 'link':
+            e.type = 'text/css';
+            e.rel = 'stylesheet';
+            e.media = "only x";
+            attr = 'href';
+            parent = 'head';
+            var sheets = window.document.styleSheets;
+        }
+        e[attr] = url;
+        document[parent].appendChild(e);
+        function toggleMedia(){
+    			var defined;
+    			for( var i = 0; i < sheets.length; i++ ){
+    				if( sheets[ i ].href && sheets[ i ].href.indexOf( url ) > -1 ){
+    					defined = true;
+    				}
+    			}
+    			if( defined ){
+    				e.media = "all";
+    			}
+    			else {
+    				setTimeout( toggleMedia );
+    			}
+    		}
+    		if (tag == 'link') {
+    		  toggleMedia();
+    		}
+      };
+    }
+    return {
+      css: _load('link'),
+      js: _load('script')
+    }
+  })();
+  if (supportsWoff2) {
+    load.css('/assets/css/data-woff2.css');
+    console.debug('Loading woff2');
+  }
+  else {
+    load.css('/assets/css/data-woff.css');
+    console.debug('Loading woff');
+  }
+</script>

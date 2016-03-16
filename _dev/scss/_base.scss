@@ -12,7 +12,7 @@
 body {
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: $fontSize_base;
-  font-weight: 300;
+  font-weight: $font-weight-normal;
   line-height: 1.5;
   color: #404d5b;
 
@@ -21,19 +21,14 @@ body {
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: $font-weight-normal;
   position: relative;
   font-size: 1.6rem;
 }
 h2 {
-  font-weight: 300;
+  font-weight: $font-weight-normal;
   position: relative;
   font-size: 1.4rem;
-}
-h3 {
-  font-weight: 300;
-  position: relative;
-  font-size: 1.2rem;
 }
 
 p {
@@ -47,13 +42,12 @@ a {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: $font-weight-bold;
 }
 
 ul {
   list-style-type: square;
 }
-ol {}
 
 pre {
   background-color: #f5f2f0;
@@ -82,10 +76,6 @@ blockquote {
   margin-bottom: 30px;
   color: #111;
 }
-cite {}
-
-input {}
-
 table {
   width: 100%;
 }
