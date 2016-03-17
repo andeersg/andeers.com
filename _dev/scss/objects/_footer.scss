@@ -2,6 +2,9 @@
   background-color: #000;
   color: #fff;
   padding: 20px 0;
+  &:hover .icon-heart {
+    animation: heartbeat 1300ms ease 3s infinite normal;
+  }
 }
 .o-social {
   display: flex;
@@ -25,7 +28,6 @@
 
 .icon-heart {
   fill: #e87;
-  animation: heartbeat 1300ms ease 3s infinite normal;
 }
 .madeby {
   font-size: 0.8rem;
