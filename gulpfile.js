@@ -48,7 +48,7 @@ gulp.task('minify-inline', function() {
 });
 
 // Default task
-gulp.task('default', ['css', 'js']); // , 'images'
+gulp.task('default', ['css', 'js', 'minify-inline']); // , 'images'
 
 // Watch
 gulp.task('watch', function() {
