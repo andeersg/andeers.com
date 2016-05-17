@@ -35,3 +35,9 @@
     <p class="madeby">Copyright © Anders Grendstadbakk, 2016.</p>
   </div>
 </footer>
+
+<script>
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/assets/js/service-worker.js');
+  }
+</script>

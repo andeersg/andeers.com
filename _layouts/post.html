@@ -1,20 +1,24 @@
 ---
 layout: default
 ---
-<div class="section">
-<article class="post post--single">
-
-  <header class="post__header">
-    <h1 class="post__title">{{ page.title }}</h1>
-    <div class="post__byline">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b %Y" }}</time>
-      <span>{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+<div class="page-content">
+  <div class="wrapper">
+    <div class="section">
+      <article class="post post--single">
+      
+        <header class="post__header">
+          <h1 class="post__title">{{ page.title }}</h1>
+          <div class="post__byline">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b %Y" }}</time>
+            <span>{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+          </div>
+        </header>
+      
+        <div class="post__content">
+          {{ content }}
+        </div>
+      
+      </article>
     </div>
-  </header>
-
-  <div class="post__content">
-    {{ content }}
   </div>
-
-</article>
 </div>

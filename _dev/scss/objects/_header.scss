@@ -34,4 +34,41 @@
     font-weight: $font-weight-bold;
     color: #3A3A4C;
   }
+  &--condensed {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .o-branding__title {
+      font-size: 32px;
+    }
+  }
+}
+
+
+.navnav {
+  margin-top: 15px;
+  font-size: 16px;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    border-right: 2px solid $color-dark;
+    padding-right: 10px;
+    margin-right: 10px;
+    float: left;
+    line-height: 1;
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+      border-right: 0;
+    }
+  }
+  &__link {
+    color: $color-dark;
+  }
 }

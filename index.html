@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<div class="home section">
-    {% for post in site.posts limit:10 %}
-      {% include post-feed.html post=post %}
-    {% endfor %}
+<div class="page-content">
+  <div class="wrapper">
+    <div class="home section">
+      {% for post in site.posts limit:10 %}
+        {% include post-feed.html post=post %}
+      {% endfor %}
 
-  <p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>
-
+      <p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>
+    </div>
+  </div>
 </div>
