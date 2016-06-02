@@ -44,6 +44,9 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
 </script>
 
 <script type="text/javascript">
+  // If localstorage and kinda valid timestamp, set class
+  // else if promise-supported, load fonts and set timestamp + class
+  // else do nothing
   if(typeof Promise !== "undefined" && Promise.toString().indexOf("[native code]") !== -1) {
     if (localStorage.webfontsLoaded) {
       document.documentElement.className += ' loaded-fonts';

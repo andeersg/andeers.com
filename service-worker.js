@@ -18,7 +18,8 @@ self.addEventListener("install", function(event) {
            after making HTTP requests for each of them.
         */
         return cache.addAll([
-          '/offline.html'
+          '/offline.html',
+          '/assets/css/style.css'
         ]);
       })
       .then(function() {
