@@ -6,7 +6,7 @@ install:
   - bundle install
 
 script:
-  - jekyll build
+  - bundle exec jekyll build
 
 branches:
   only:
