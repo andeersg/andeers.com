@@ -22,6 +22,17 @@ use Drupal\node\Entity\Node;
 $node = Node::load(1);
 ```
 
+**Update:**
+A good friend of mine [Zaporylie](http://github.com/zaporylie), told me of a better way of loading nodes (and other entities):
+
+```PHP
+$entity = $container->get('entity_type.manager')->getStorage('entity_type')->load($entity_id);
+```
+
+Doing it this way makes it easier to extend functionality and override original node class.
+
+### Working with fields
+
 To get values from your node you can either use some of the defined methods:
 
 ```PHP
@@ -32,10 +43,10 @@ dpm($node);
 // To see all methods just switch to the "Available methods" tab.
 ```
 
-Or you can use the get method:
+Or you can just specify the field name:
 
 ```PHP
-$field = $node->get('field_name');
+$field = $node->field_name;
 ```
 
 Most fields will be an instance of `FieldItemList`, but images and attachments for example will be of `FileFieldItemList`.
