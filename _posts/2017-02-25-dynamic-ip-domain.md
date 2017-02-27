@@ -83,3 +83,5 @@ If you want to serve a webpage at port 80, you need to port forward external por
 * Some torrent clients have a web ui, you could access it from everywhere and manage your downloads
 * Enable SSH access to your computer
 * Probably you could run a Minecraft (or many other games) server
+
+Credit should go to [DigitalOcean community](https://www.digitalocean.com/community/questions/using-the-v2-api-and-my-home-computer-to-automatically-update-a-domain-name-a-record-like-dynamic-dns "DigitalOcean Community") where I found the script.
