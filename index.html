@@ -23,6 +23,5 @@ layout: default
       <span class=""><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time></span>
     </article>
   {% endfor %}
+  <p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>
 </section>
-
-<p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>

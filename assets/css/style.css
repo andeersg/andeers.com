@@ -49,7 +49,7 @@ code {
   display: inline-block; }
 
 a {
-  color: #0e9daf;
+  color: #444;
   text-decoration: none;
   border-bottom: 1px dashed #0e9daf; }
 
@@ -84,20 +84,24 @@ p {
   padding-top: 50px;
   padding-bottom: 50px;
   border-bottom: 1px solid #e9e9e9; }
-  .article--feed:hover {
-    background-color: #e9e9e9; }
   .article--feed a {
     text-decoration: none;
-    border-bottom: 0; }
+    border-bottom: 0;
+    color: #4e5e6a; }
+    .article--feed a:hover {
+      color: #2D3E4A; }
   .article--feed h2 {
     font-size: 42px;
-    margin-bottom: 10px;
-    color: #1976D2; }
+    margin-bottom: 10px; }
 
 .article--older {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+
+.article__published {
+  color: #9DA8B0;
+  font-size: 0.925em; }
 
 .article__link {
   margin-left: auto;
@@ -112,14 +116,26 @@ p {
   padding-bottom: 15px;
   border-bottom: 1px solid #F9F9F9; }
 
+.last-posts {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px; }
+
 .more-posts {
   margin-left: auto;
   margin-right: auto;
   max-width: 700px;
   padding: 50px 0; }
 
-.footer {
+.site-footer {
+  background-color: #333;
+  color: #FFF;
   text-align: center;
   font-family: "Anonymous Pro", monospace;
   padding-top: 30px;
   padding-bottom: 30px; }
+
+.icon-heart {
+  width: 1em;
+  height: 1em;
+  fill: red; }
