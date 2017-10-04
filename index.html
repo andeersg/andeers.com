@@ -2,14 +2,26 @@
 layout: default
 ---
 
-<div class="page-content">
-  <div class="wrapper">
-    <div class="home section">
-      {% for post in site.posts limit:10 %}
-        {% include post-feed.html post=post %}
-      {% endfor %}
+<section class="last-posts">
+  <!-- The last three articles. -->
+  {% for post in site.posts limit:3 %}
+    <article class="article article--feed">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="article__link">
+        <h2>{{ post.title }}</h2>
+        <span class="article__published"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time></span>
+        <p>{{ post.excerpt }}</p>
+      </a>
+    </article>
+  {% endfor %}
+</section>
 
-      <p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>
-    </div>
-  </div>
-</div>
+<section class="more-posts page">
+  <!-- 6-10 more articles. -->
+  {% for post in site.posts limit:7 offset:3 %}
+    <article class="article article--older">
+      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <span class=""><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time></span>
+    </article>
+  {% endfor %}
+  <p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>
+</section>

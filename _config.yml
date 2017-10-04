@@ -19,9 +19,9 @@ permalink: :year/:month/:title
 kramdown:
   input: GFM
 
-exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json, gulpfile.js, README.md, _pre_build]
+exclude: [vendor, Gemfile, Gemfile.lock, node_modules, package.json, gulpfile.js, README.md]
 
 auto: false
 
-gems:
+plugins:
   - jekyll-feed

@@ -1,17 +1,14 @@
+/**
+ * Style.scss for andeers.com 2017. Made with patternlab
+ */
 @import 'settings';
 @import 'tools';
+@import 'body';
 
-@import 'base';
+@import 'components/header';
+@import 'components/article';
+@import 'components/footer';
 
-@import 'components/layout';
-@import 'components/list';
-@import 'components/prism';
-@import 'components/button';
-
-
-@import 'objects/header';
-@import 'objects/footer';
-@import 'objects/post';
-@import 'objects/archive';
-
-@import 'trumps/helpers';
+//@import 'components/top-of-page';
+//@import 'components/sections';
+//@import 'components/post';
