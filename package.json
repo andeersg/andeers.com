@@ -2,23 +2,18 @@
   "name": "andeers.com",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "bundle install",
-    "start": "bundle exec jekyll serve"
+    "start": "bundle exec jekyll serve --watch --incremental --drafts",
+    "watch": "gulp"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.1",
-    "gulp-jshint": "^1.11.2",
-    "gulp-minify-inline": "^0.2.0",
-    "gulp-sass": "^2.0.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp-clean-css": "^2.0.3",
-    "gulp-uglify": "^1.5.3"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
   }
 }

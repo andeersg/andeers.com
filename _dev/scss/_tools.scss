@@ -1,20 +1,36 @@
-@mixin break($media) {
-	@if $media == xlarge {
-		@media only screen and (min-width: $break-xlarge) { @content; }
-	}
-	@if $media == desktop {
-		@media only screen and (min-width: 0) and (max-width: $break-desktop) { @content; }
-	}
-	@if $media == large {
-		@media only screen and (min-width: 0) and (max-width: $break-large) { @content; }
-	}
-	@if $media == medium {
-		@media only screen and (min-width: 0) and (max-width: $break-medium) { @content; }
-	}
-	@if $media == small {
-		@media only screen and (min-width: 0) and (max-width: $break-small) { @content; }
-	}
-	@else if $media == xsmall {
-		@media only screen and (max-width: $break-xsmall) { @content; }
-	}
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+@mixin fluid-ex($mod_1, $mod_2) {
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+
+@mixin break($value) {
+  @media (min-width: $value) {
+    @content;
+  }
 }
