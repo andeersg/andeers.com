@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "raccn": "github:andeersg/raccn"
+    "raccn": "github:andeersg/raccn#e50539e"
   }
 }
