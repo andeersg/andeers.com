@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "raccn",
-    "watch": "raccn --watch",
-    "serve": "raccn --serve"
+    "build": "raccn build",
+    "watch": "raccn watch",
+    "serve": "raccn serve"
   },
   "author": "",
   "license": "ISC",
