@@ -16,7 +16,7 @@ tags:
   - Twitter
 ---
 <p style="text-align: center;">
-  <img class="   aligncenter" title="SocialMediaCloud" src="http://farm6.static.flickr.com/5091/5440728466_149c85e39c_z.jpg" alt="SocialMediaCloud" width="518" height="351" />
+  <img class="   aligncenter" title="SocialMediaCloud" src="https://farm6.static.flickr.com/5091/5440728466_149c85e39c_z.jpg" alt="SocialMediaCloud" width="518" height="351" />
 </p>
 
 **Hvordan skal man lage en strategi for bruk av sosiale medier, og trenger man en strategi for sosiale medier?**
