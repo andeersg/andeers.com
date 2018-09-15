@@ -1,0 +1,15 @@
+---
+title: Archive
+permalink: "archive"
+---
+<div>
+  <p>Archives</p>
+  {{#group_by_year site.posts}}
+    <section class="section">
+      <h2 class="section__title">{{ year }}</h2>
+      {{#each posts}}
+        <a href="{{ permalink }}">{{ title }}</a>
+      {{/each}}
+    </section>
+  {{/group_by_year}}
+</div>

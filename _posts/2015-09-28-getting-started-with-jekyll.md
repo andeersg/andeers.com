@@ -73,7 +73,7 @@ Templates use a templating language called **Liquid**, if you are familiar with 
 A really simple index page could look something like this:
 
 ```html
-{% raw %}
+{{{{raw-helper}}}}
 ---
 layout: default
 ---
@@ -90,7 +90,7 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-{% endraw %}
+{{{{/raw-helper}}}}
 ```
 
 The first part between the dashes is the YAML, and a funny thing I just learnt is that YAML is short for:

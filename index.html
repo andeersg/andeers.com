@@ -1,27 +1,23 @@
 ---
 layout: default
+title: "Anders Grendstadbakk"
 ---
-
-<section class="last-posts">
-  <!-- The last three articles. -->
-  {% for post in site.posts limit:3 %}
-    <article class="article article--feed">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="article__link">
-        <h2>{{ post.title }}</h2>
-        <span class="article__published"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time></span>
-        <p>{{ post.excerpt }}</p>
+<section class="section grid-list">
+  <h2 class="section__title">Latest writing</h2>
+  
+  {{#latest site.posts limit="6"}}
+    <article class="post">
+      <a href="{{ permalink }}">
+        <p class="post__meta">{{date published}} {{#beta}}<span class="tag">Drupal</span>{{/beta}}</p>
+        <h2 class="post__title">{{ title }}</h2>
+        <p class="post__tldr">{{ excerpt }}</p>
       </a>
     </article>
-  {% endfor %}
+  {{/latest}}
 </section>
 
-<section class="more-posts page">
-  <!-- 6-10 more articles. -->
-  {% for post in site.posts limit:7 offset:3 %}
-    <article class="article article--older">
-      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      <span class=""><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time></span>
-    </article>
-  {% endfor %}
-  <p><a href="{{ "/archive/" | prepend: site.baseurl }}" class="btn">More posts</a></p>
+{{#beta}}
+<section class="section">
+  <h2 class="section__title">Projects</h2>
 </section>
+{{/beta}}

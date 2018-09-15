@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
+permalink: about
 ---
 
 ## Anders
@@ -10,13 +10,7 @@ permalink: /about/
 * I come from Norway.
 * I try to be social at [Twitter](https://twitter.com/andeersg "My profile at Twitter") & [Facebook](https://facebook.com/andeersg "My Facebook profile").
 * I share and contribute to open source on [Github](https://github.com/andeersg).
-* I work at [NyMedia](http://nymedia.no "NyMedia"), a Norwegian Drupal company.
-
-
-## This website
-
-Right now this blog is powered by [Jekyll](http://jekyllrb.com/ "Jekyll"), and hosted at [Github](https://github.com/andeersg/andeersg.github.io "The source code of this repo").
-For a long time this blog was powered by WordPress, but I discovered Jekyll and realized it suited me better.
+* I work at [Bouvet](https://bouvet.no "Bouvet").
 
 ## Contact
 

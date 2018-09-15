@@ -1,19 +1,17 @@
 {
   "name": "andeers.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "My website",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "bundle install",
-    "start": "bundle exec jekyll serve --watch --incremental --drafts",
-    "watch": "gulp"
+    "build": "raccn",
+    "watch": "raccn --watch",
+    "serve": "raccn --serve"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0"
+  "dependencies": {
+    "raccn": "github:andeersg/raccn"
   }
 }

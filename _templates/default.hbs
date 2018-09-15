@@ -1,0 +1,43 @@
+---
+default: true
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}} | {{site.config.sitename}}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <header class="header">
+          <h1 class="site-name"><a href="/">Anders Grendstadbakk</a></h1>
+          <p class="subtitle">is a web developer++</p>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="/about">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="/archive">Archive</a>
+            </li>
+          </ul>
+      </header>
+
+      {{#if is_front}}
+        <section class="intro">
+          <p>My name's Anders, I'm a web developer living in Norway. During the daylight I mostly work with Drupal and front-end. But when the night comes I tend to
+          do more Node.js</p>
+        </section>
+      {{/if}}
+      
+      {{{content}}}
+
+      <footer>
+        <p>© <strong>Anders Grendstadbakk</strong> {{date_now "Y"}}</p>
+      </footer>
+    </div>
+  </body>
+</html>

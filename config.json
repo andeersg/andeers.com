@@ -1,0 +1,11 @@
+{
+  "sitename": "Andeers.com",
+  "collections": [
+    {
+      "name": "posts",
+      "folder": "_posts",
+      "permalink": ":year/:month/:title"
+    }
+  ],
+  "permalink": ":path/:filename"
+}
