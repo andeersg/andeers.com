@@ -192,3 +192,7 @@ footer {
   margin-right: 10px;
   color: #333;
 }
+.outdated {
+  padding: 20px;
+  font-size: 0.9em;
+}

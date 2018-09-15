@@ -4,8 +4,8 @@
     {
       "name": "posts",
       "folder": "_posts",
-      "permalink": ":year/:month/:title"
+      "permalink": "/:year/:month/:title"
     }
   ],
-  "permalink": ":path/:filename"
+  "permalink": "/:path/:filename"
 }

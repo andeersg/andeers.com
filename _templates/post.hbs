@@ -6,6 +6,10 @@ layout: default
     <h1 class="article__title">{{ page.title }}</h1>
     {{!-- <p class="article__tldr">You wont believe what happened next?</p> --}}
     <p class="article__meta">{{ date page.published }}</p>
+    {{!-- {{#outdated page.published 3}}
+    <p class="outdated">This article is quite old, the content may be no longer relevant.</p>
+    {{/outdated}} --}}
+
   </header>
 
   {{{ content }}}
