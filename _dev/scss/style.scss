@@ -1,0 +1,127 @@
+@import 'base';
+
+@import 'grids';
+@import 'components/article';
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+.header {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  grid-column: 1 / -1;
+}
+
+.site-name {
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 0;
+  line-height: 1.1;
+  grid-column: 1;
+}
+.subtitle {
+  margin-top: 0;
+  font-size: 32px;
+  grid-column: 1;
+}
+.menu {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+  list-style: none;
+  padding: 0;
+}
+.menu__item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color var(--transition-fast) ease;
+}
+.menu__link:hover {
+  color: var(--theme-color);
+}
+
+.site-name a {
+  color: #333;
+  text-decoration: none;
+}
+
+.grid-list {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.section {
+  padding-top: 40px;
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+  display: grid;
+}
+
+.section__title {
+  border-top: 1px solid #dadada;
+  padding-top: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 16px;
+  grid-column: 1 / -1;
+}
+
+.post a {
+  text-decoration: none;
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+.post__title {
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--theme-color);
+  text-decoration-color: var(--theme-color);
+}
+.post__title:hover {
+  color: var(--theme-color);
+}
+.post__meta {
+  font-size: 13px;
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.tag {
+  margin-left: 10px;
+  display: inline-block;
+  color: var(--theme-color);
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+}
+.tag::before {
+  content: '•';
+  margin-right: 10px;
+  color: #333;
+}
+.outdated {
+  padding: 20px;
+  font-size: 0.9em;
+}

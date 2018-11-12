@@ -7,8 +7,7 @@ default: true
     {{> head}}
   </head>
   <body>
-    <div class="grid">
-      <header class="header">
+      <header class="header wrapper">
           <h1 class="site-name"><a href="/">Anders Grendstadbakk</a></h1>
           {{!-- <p class="subtitle">is a web developer++</p> --}}
           <ul class="menu">
@@ -20,19 +19,11 @@ default: true
             </li>
           </ul>
       </header>
-
-      {{#if is_front}}
-        <section class="intro">
-          <p>My name's Anders, I'm a web developer living in Norway. During the daylight I mostly work with Drupal and front-end. But when the night comes I tend to
-          do more Node.js</p>
-        </section>
-      {{/if}}
       
       {{{content}}}
 
-      <footer>
+      <footer class="wrapper">
         <p>© <strong>Anders Grendstadbakk</strong> {{date_now "Y"}}</p>
       </footer>
-    </div>
   </body>
 </html>

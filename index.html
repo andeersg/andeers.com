@@ -2,7 +2,15 @@
 layout: default
 title: "Anders Grendstadbakk"
 ---
-<section class="section grid-list">
+
+{{#if is_front}}
+  <section class="intro wrapper">
+    <p>My name's Anders, I'm a web developer living in Norway. During the daylight I mostly work with Drupal and front-end. But when the night comes I tend to
+    do more Node.js</p>
+  </section>
+{{/if}}
+
+<section class="grid{{#if is_front}} grid--front{{/if}}">
   <h2 class="section__title">Latest writing</h2>
   
   {{#latest site.posts limit="6"}}
@@ -17,7 +25,7 @@ title: "Anders Grendstadbakk"
 </section>
 
 {{#beta}}
-<section class="section">
-  <h2 class="section__title">Projects</h2>
-</section>
+  <section class="section">
+    <h2 class="section__title">Projects</h2>
+  </section>
 {{/beta}}

@@ -1,0 +1,31 @@
+.article {
+  > * {
+    grid-column: 4;
+  }
+
+  &__header {
+    grid-column: 4;
+    text-align: center;
+  }
+
+  &__title {
+    /* font-size: 42px; */
+    font-size: calc( 36px + (160 - 100) * (100vw - 300px) / (1920 - 300) );
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+  }
+
+  &__tldr {
+    font-size: 22px;
+  }
+
+  &__meta {
+    font-size: 16px;
+  }
+
+  pre {
+    grid-column: 3 / span 2;
+  }
+}
