@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "raccn": "^1.0.2"
+    "raccn": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
