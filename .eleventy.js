@@ -74,8 +74,10 @@ module.exports = function(eleventyConfig) {
     return ret;
   });
 
+	// Pass through:
 	eleventyConfig.addPassthroughCopy('assets');
 	eleventyConfig.addPassthroughCopy('wp-content');
+	eleventyConfig.addPassthroughCopy('favicon.ico');
 
   return {
 		passthroughFileCopy: true,
