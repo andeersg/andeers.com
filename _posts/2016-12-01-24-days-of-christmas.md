@@ -1,7 +1,8 @@
 ---
 title: 24 days of Christmas
 layout: post
-excerpt: December is here. Enter the advent calendars and gingerbread cookies. This Christmas I have decided to try to write a blog post every day. 
+excerpt: December is here. Enter the advent calendars and gingerbread cookies. This Christmas I have decided to try to write a blog post every day.
+permalink: /2016/12/24-days-of-christmas/
 ---
 December is here. Enter the advent calendars and gingerbread cookies.
 

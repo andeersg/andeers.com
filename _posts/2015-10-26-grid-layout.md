@@ -2,6 +2,7 @@
 title: CSS Grid Layout
 layout: post
 excerpt: If you have worked with the web, grids are nothing new to you. The grid layout specification is a different take on grids than the numerous grid frameworks that exist.
+permalink: /2015/10/grid-layout/
 ---
 If you have worked with the web, grids are nothing new to you. The grid layout specification is a different take on grids than the numerous grid frameworks that exist.
 

@@ -1,31 +1,16 @@
 ---
-layout: default
-title: "Anders Grendstadbakk"
+layout: main
 ---
-
-{{#if is_front}}
-  <section class="intro wrapper">
-    <p>My name's Anders, I'm a web developer living in Norway. During the daylight I mostly work with Drupal and front-end. But when the night comes I tend to
-    do more Node.js</p>
-  </section>
-{{/if}}
-
-<section class="grid{{#if is_front}} grid--front{{/if}}">
-  <h2 class="section__title">Latest writing</h2>
-  
-  {{#latest site.posts limit="6"}}
-    <article class="post">
-      <a href="{{ permalink }}">
-        <p class="post__meta">{{date published}} {{#beta}}<span class="tag">Drupal</span>{{/beta}}</p>
-        <h2 class="post__title">{{ title }}</h2>
-        <p class="post__tldr">{{ excerpt }}</p>
-      </a>
-    </article>
-  {{/latest}}
-</section>
-
-{{#beta}}
+<div class="wrapper--front">
   <section class="section">
-    <h2 class="section__title">Projects</h2>
+    <h2 class="section__title">Recent articles</h2>
+    {{#each collections.latestPosts}}
+      <article class="latest">
+        <div class="latest__time">{{readableDate this.date}}</div>
+        <h3 class="latest__title">
+          <a class="latest__link" href="{{this.url}}">{{this.data.title}}</a>
+        </h3>
+      </article>
+    {{/each}}
   </section>
-{{/beta}}
+</div>

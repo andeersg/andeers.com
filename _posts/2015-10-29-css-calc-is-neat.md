@@ -2,6 +2,7 @@
 title: CSS Calc is pretty neat
 layout: post
 excerpt: By using calc it's really easy to make elements use the full width of the page even if the rest of the site is centered.
+permalink: /2015/10/css-calc-is-neat/
 ---
 With a centered layout it can be hard to have full with elements without a hassle.
 

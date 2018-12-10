@@ -2,6 +2,7 @@
 title: Entity API in Drupal 8
 layout: post
 excerpt: A quick walkthrough of the most common entity operations in Drupal 8.
+permalink: /2017/02/entity-api-drupal-8/
 ---
 
 A quick walkthrough of the most common entity operations in Drupal 8.

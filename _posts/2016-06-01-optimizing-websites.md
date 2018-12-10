@@ -2,6 +2,7 @@
 title: Optimizing websites
 layout: post
 excerpt: By using calc it's really easy to make elements use the full width of the page even if the rest of the site is centered.
+permalink: /2016/06/optimizing-websites/
 ---
 I have recently done some optimizations to my blog to improve the loading speed of it, and thought I should write it down, because a faster web-site is a happier web site.
 

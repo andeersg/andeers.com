@@ -1,0 +1,19 @@
+.latest {
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  &__title {
+    font-weight: 500;
+    font-size: 1.6em;
+    color: #333;
+  }
+  &__link {
+    color: inherit;
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--theme-color);
+    text-decoration-color: var(--theme-color);
+    &:hover {
+      color: var(--theme-color);
+    }
+  }
+}

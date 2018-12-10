@@ -2,6 +2,7 @@
 title: Programming advent calendars
 layout: post
 excerpt: If you like coding and advent calendars I can really recommend Advent of Code. Every day up until Christmas you get access to a new two-part task you have to solve with programming.
+permalink: /2016/12/programming-advent-calendars/
 ---
 If you like coding and advent calendars I can really recommend [Advent of Code](http://adventofcode.com/2016). Every day up until Christmas you get access to a new two-part task you have to solve with programming.
 

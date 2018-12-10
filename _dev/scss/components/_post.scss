@@ -1,0 +1,36 @@
+.post {
+  &__header {
+    width: var(--article-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {}
+  &__byline {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  &__meta {
+    font-size: 13px;
+    margin-bottom: 11px;
+    font-weight: 700;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px var(--article-width) 10px 1fr 1fr;
+    & > * {
+      grid-column: 4;
+    }
+    pre {
+      grid-column: 3 / span 3;
+    }
+  }
+}
+
+.site-title {
+  margin-top: 10px;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 42px;
+  margin-bottom: 50px;
+}

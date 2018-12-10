@@ -2,6 +2,7 @@
 title: Use DigitalOcean and home computer to update domain IP
 layout: post
 excerpt: With DigitalOcean API you can easily point a domain to a computer at home so you can access it from everywhere.
+permalink: /2017/02/dynamic-ip-domain/
 ---
 
 Using DigitalOcean(DO)'s API, a domain and a script on your home computer, you can have a subdomain pointing to your home network all the time.

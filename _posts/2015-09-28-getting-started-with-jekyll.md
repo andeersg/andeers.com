@@ -5,6 +5,7 @@ excerpt: A small introduction to Jekyll and a guide to get you started with your
 layout: post
 categories:
   - Jekyll
+permalink: /2015/09/getting-started-with-jekyll/
 ---
 
 A couple of days ago I moved my blog from WordPress to Jekyll, a static site generator. Jekyll has a simple structure that allows for easy theming and styling.
@@ -73,7 +74,7 @@ Templates use a templating language called **Liquid**, if you are familiar with 
 A really simple index page could look something like this:
 
 ```html
-{{{{raw-helper}}}}
+{% raw %}
 ---
 layout: default
 ---
@@ -82,15 +83,15 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">\{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="\{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
 </div>
-{{{{/raw-helper}}}}
+{% endraw %}
 ```
 
 The first part between the dashes is the YAML, and a funny thing I just learnt is that YAML is short for:

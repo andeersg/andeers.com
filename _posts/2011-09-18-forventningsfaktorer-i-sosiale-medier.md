@@ -22,7 +22,7 @@ Når jeg leser gjennom Sparebank1 sin blogg får jeg et stort inntrykk av at det
 
 De har veldig mange nyttige artikler som f.eks omhandler id-tyveri, håndtrykk og omdømme, men også mer morsomme artikler som [denne][2] som forteller at de har samlet masse musikk de omtaler som &#8220;[bankmusikk][3]&#8221; på Spotify. Sånne artikler som det gir meg litt innsikt i hverdagen deres føler jeg, jeg får det inntrykket at man kan ha det morsomt selv i et stort seriøst firma.<figure id="attachment_228" style="width: 517px;" class="wp-caption aligncenter">
 
-[<img class="size-large wp-image-228   " title="pengeroglivet" src="/wp-content/uploads/2011/09/pengeroglivet1-1024x508.png" alt="Penger og Livet" width="517" height="257" />][4]<figcaption class="wp-caption-text">Penger og Livet</figcaption></figure> 
+[<img class="size-large wp-image-228   " title="pengeroglivet" src="http://andeers.com/wp-content/uploads/2011/09/pengeroglivet1-1024x508.png" alt="Penger og Livet" width="517" height="257" />][4]<figcaption class="wp-caption-text">Penger og Livet</figcaption></figure> 
 
 En annen blogg jeg vil trekke frem er [NRKBeta][5], NRK sin blogg om internett, nye teknologier og sosiale medier:
 
@@ -32,7 +32,7 @@ NRKBeta er veldig gode på respons til leserne sine i kommentarfelt og på Twitt
 
 Det gir meg et veldig godt inntrykk av NRKBeta.<figure id="attachment_229" style="width: 516px;" class="wp-caption aligncenter">
 
-[<img class="size-large wp-image-229   " title="nrkbeta" src="/wp-content/uploads/2011/09/nrkbeta1-1024x509.png" alt="NRKBeta" width="516" height="256" />][7]<figcaption class="wp-caption-text">NRKBeta</figcaption></figure> 
+[<img class="size-large wp-image-229   " title="nrkbeta" src="http://andeers.com/wp-content/uploads/2011/09/nrkbeta1-1024x509.png" alt="NRKBeta" width="516" height="256" />][7]<figcaption class="wp-caption-text">NRKBeta</figcaption></figure> 
 
 Generelt kan man vel si at når bloggene blir brukt på gode måter med nyttige artikler og ikke fremstår som bare reklame for bedriften så får man straks et bedre inntrykk. At man lar ansatte skrive artikler hjelper også veldig på troverdigheten til bloggen. Men det viktigste, iallefall det jeg syns er viktigst, er at forfatterne er flinke til å følge opp artiklene sine, kommentere, bidra med mer enn å bare skrive selve innlegget. Da får jeg virkelig et inntrykk av at de legger ned en innsats i bloggen.
 

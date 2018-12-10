@@ -1,0 +1,19 @@
+.header {
+  background-color: #f4f2f0;
+
+  &__inside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 0;
+    line-height: 1.1;
+    grid-column: 1;
+  }
+}

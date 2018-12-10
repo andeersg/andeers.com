@@ -1,15 +1,14 @@
 ---
-layout: default
 title: About
-permalink: about
+permalink: /about/
+layout: page
 ---
-
 ## Anders
 
 * I write code.
 * I come from Norway.
-* I try to be social at [Twitter](https://twitter.com/andeersg "My profile at Twitter") & [Facebook](https://facebook.com/andeersg "My Facebook profile").
 * I share and contribute to open source on [Github](https://github.com/andeersg).
+* I try to be social at [Twitter](https://twitter.com/andeersg "My profile at Twitter") & [Facebook](https://facebook.com/andeersg "My Facebook profile").
 * I work at [Bouvet](https://bouvet.no "Bouvet").
 
 ## Contact

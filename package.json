@@ -1,23 +1,24 @@
 {
-  "name": "andeers.com",
-  "version": "1.0.1",
-  "description": "My website",
-  "main": "index.js",
+  "name": "andeers2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "raccn build",
-    "watch": "raccn watch",
-    "serve": "raccn serve"
+    "build": "eleventy",
+    "watch": "concurrently \"eleventy --serve\" \"gulp watch\""
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "raccn": "^1.0.3"
-  },
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
+    "autoprefixer": "^9.3.1",
     "gulp": "^4.0.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.6.0",
+    "concurrently": "^4.1.0",
+    "luxon": "^1.8.2"
   }
 }

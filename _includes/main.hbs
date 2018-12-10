@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inside">
+        <h1 class="site-name header__title"><a href="/">Anders Grendstadbakk</a></h1>
+        {{!-- <p class="subtitle">is a web developer++</p> --}}
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="/articles">Articles</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    {{{ content }}}
+    
+    <footer class="site-footer">
+      <p>© 2011–2018 <strong>Anders Grendstadbakk</strong></p>
+    </footer>
+  </body>
+</html>
+

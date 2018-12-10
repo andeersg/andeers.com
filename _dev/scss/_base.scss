@@ -21,10 +21,20 @@ body {
   background: #fdfbfb;
   font-weight: 300;
   border-top: 6px solid var(--theme-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: var(--theme-color);
+  color: inherit;
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--theme-color);
+  text-decoration-color: var(--theme-color);
+  transition: color 0.3s ease;
+  font-weight: 500;
+  &:hover {
+    color: var(--theme-color);
+  }
 }
 p {
   margin-top: 0;
@@ -37,7 +47,7 @@ pre {
   color: #FFF;
   font-family: monospace;
   font-size: 13px;
-  padding: 10px;
+  padding: 20px;
   overflow-x: scroll;
 }
 

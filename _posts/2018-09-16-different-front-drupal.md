@@ -1,6 +1,7 @@
 ---
 title: Different front page for logged in users in Drupal 8
 layout: post
+permalink: /2018/09/different-front-drupal/
 ---
 
 Sometimes we have the need to show logged in users something different than the regular visitors. It could be a dashboard for logged in users and a landing page for regular users. Or anything.

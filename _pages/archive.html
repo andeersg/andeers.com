@@ -1,0 +1,23 @@
+---
+title: Articles
+permalink: /articles/
+layout: main
+---
+<div class="archive-page">
+    <section class="wrapper--front">
+      <h1 class="site-title">Archive</h1>
+      <ul class="archive-list">
+      {{#group_by_year collections.posts}}
+          <li class="archive-list__item archive-list__year">{{ year }}</li>
+          {{#each posts}}
+            <li class="archive-list__item archive-list__post">
+              <h2 class="archive-list__title">
+                <a href="{{ this.url }}">{{ this.data.title }}</a>
+              </h2>
+              <div class="latest__time">{{readableDate this.date}}</div>
+            </li>
+          {{/each}}
+      {{/group_by_year}}
+      </ul>
+    </section>
+  </div>

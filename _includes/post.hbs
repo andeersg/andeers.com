@@ -1,0 +1,19 @@
+---
+layout: main
+---
+<div class="page-content">
+  <article class="post post--single">
+      
+    <header class="post__header">
+      <div class="post__byline">
+        <time datetime="{{ page.date }}">{{readableDate page.date}}</time>
+        <span>{{#if page.meta}} • {{ page.meta }}{{/if}}</span>
+      </div>
+      <h1 class="site-title">{{ title }}</h1>
+    </header>
+      
+    <div class="post__content">
+      {{{ content }}}
+    </div>    
+  </article>
+</div>
