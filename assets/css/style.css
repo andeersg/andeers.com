@@ -166,11 +166,19 @@ pre code {
 
 .post__content {
   display: grid;
-  grid-template-columns: 1fr 1fr 10px var(--article-width) 10px 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 10px var(--article-width) 10px 1fr 1fr;
+  max-width: 100%; }
   .post__content > * {
     grid-column: 4; }
   .post__content pre {
     grid-column: 3 / span 3; }
+  @media screen and (max-width: 1200px) {
+    .post__content {
+      grid-template-columns: 10px 1fr 10px; }
+      .post__content > * {
+        grid-column: 2; }
+      .post__content pre {
+        grid-column: 1 / span 3; } }
 
 .site-title {
   margin-top: 10px;
