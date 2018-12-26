@@ -172,7 +172,7 @@ pre code {
     grid-column: 4; }
   .post__content pre {
     grid-column: 3 / span 3; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 760px) {
     .post__content {
       grid-template-columns: 10px 1fr 10px; }
       .post__content > * {

@@ -26,7 +26,7 @@
       grid-column: 3 / span 3;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 760px) {
       grid-template-columns: 10px 1fr 10px;
       & > * {
         grid-column: 2;
