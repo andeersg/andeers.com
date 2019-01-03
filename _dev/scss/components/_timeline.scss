@@ -1,0 +1,10 @@
+.timeline {
+  &__event {}
+  &__type {
+    text-transform: capitalize;
+    width: 60px;
+    display: inline-block;
+  }
+  &__date {}
+  &__activity {}
+}
