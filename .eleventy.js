@@ -1,13 +1,33 @@
 const { DateTime } = require('luxon');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+const metadata = require('./_data/metadata.json');
 
 module.exports = function(eleventyConfig) {
-  function getPosts(collectionApi) {
+	eleventyConfig.addPlugin(pluginRss);
+
+	function getPosts(collectionApi) {
 		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
 		});
 	}
+
 	function hasTag(post, tag) {
 		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
+	}
+
+	function shouldIncludeDraft(item, includeDrafts) {
+		if (typeof item.data.draft == 'undefined') {
+			return true;
+		}
+		if (item.data.draft && includeDrafts) {
+			return true;
+		}
+		else if (item.data.draft && !includeDrafts) {
+			return false;
+		}
+
+		return false;
 	}
 
 	eleventyConfig.addCollection('posts', function(collection) {
@@ -72,7 +92,11 @@ module.exports = function(eleventyConfig) {
     });
 
     return ret;
-  });
+	});
+
+	eleventyConfig.addFilter('getAbsoluteUrl', path => {
+		return `${metadata.url}${path}`;
+	});
 
 	// Pass through:
 	eleventyConfig.addPassthroughCopy('assets');

@@ -1,0 +1,15 @@
+{
+  "title": "Andeers.com",
+  "url": "https://andeers.com/",
+  "feed": {
+    "subtitle": "I mainly write about web development and tech.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://andeers.com/feed/feed.xml",
+    "id": "https://andeers.com/"
+  },
+  "author": {
+    "name": "Anders Grendstadbakk",
+    "email": "anders.2205@gmail.com"
+  }
+}
