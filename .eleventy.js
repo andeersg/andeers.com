@@ -98,6 +98,13 @@ module.exports = function(eleventyConfig) {
 		return `${metadata.url}${path}`;
 	});
 
+	eleventyConfig.addFilter('pageTitle', title => {
+		if (title && title !== '') {
+			return `${title} | ${metadata.title}`;
+		}
+		return metadata.title;
+	});
+
 	// Pass through:
 	eleventyConfig.addPassthroughCopy('assets');
 	eleventyConfig.addPassthroughCopy('wp-content');
