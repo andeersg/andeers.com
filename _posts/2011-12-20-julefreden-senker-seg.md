@@ -13,7 +13,7 @@ categories:
 Endelig er det skikkelig juleferie (jeg har forsåvidt en øving som skal inn og en rapport som skal leveres i Januar), men **nå** er det juleferie en stund.
 
 <p style="text-align: center;">
-  <img class="aligncenter" title="http://www.flickr.com/photos/realityfanclub/4206605399/" alt="Snow in forest" src="http://farm3.staticflickr.com/2801/4206605399_148975cc3e.jpg" width="500" height="333" />
+  <img class="aligncenter" title="https://www.flickr.com/photos/realityfanclub/4206605399/" alt="Snow in forest" src="https://farm3.staticflickr.com/2801/4206605399_148975cc3e.jpg" width="500" height="333" />
 </p>
 
 Etter et langt semester med mange innleveringer, rapporter og øvinger er det godt å endelig komme hjem og kunne slappe av litt. Ikke ha skole å tenke på hele tiden, men bare slappe av sammen med familie. Nå skal jeg nyte ferien så lenge jeg kan før det blir skole igjen i Januar. I semesteret som har gått har jeg hatt mange forskjellige fag:
