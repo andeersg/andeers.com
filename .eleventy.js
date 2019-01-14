@@ -2,12 +2,21 @@ const { DateTime } = require('luxon');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const metadata = require('./_data/metadata.json');
+const eleventyVars = require('./_data/eleventy');
+const snippetGenerator = require('./_helpers/excerpt');
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 
 	function getPosts(collectionApi) {
-		return collectionApi.getFilteredByGlob("./_posts/*").reverse().filter(function(item) {
+		const globs = [
+			'./_posts/*',
+		];
+		if (eleventyVars.env == 'development') {
+			globs.push('./_drafts/*');
+		}
+
+		return collectionApi.getFilteredByGlob(globs).reverse().filter(function(item) {
 			return !!item.data.permalink;
 		});
 	}
@@ -34,11 +43,13 @@ module.exports = function(eleventyConfig) {
 		return getPosts(collection);
 	});
 
-	eleventyConfig.addCollection("latestPosts", function(collection) {
-		let posts = collection.getSortedByDate().reverse();
+	eleventyConfig.addCollection('latestPosts', function(collection) {
+		// let posts = collection.getSortedByDate().reverse();
+		let posts = getPosts(collection);
+
 		let items = [];
 		for( let item of posts ) {
-			if( !!item.inputPath.match(/\/_posts\//) && !hasTag(item, "external") ) {
+			if( (!!item.inputPath.match(/\/_posts\//) || !!item.inputPath.match(/\/_drafts\//)) && !hasTag(item, "external") ) {
 				items.push( item );
 				if( items.length >= 5 ) {
 					return items;
@@ -83,7 +94,7 @@ module.exports = function(eleventyConfig) {
     });
 
     const sortedYears = Object.keys(yearPosts).sort().reverse();
-    
+
     sortedYears.forEach((year) => {
       ret += options.fn({
         year: year,
@@ -103,6 +114,22 @@ module.exports = function(eleventyConfig) {
 			return `${title} | ${metadata.title}`;
 		}
 		return metadata.title;
+	});
+
+	eleventyConfig.addFilter('pageDescription', (description, opt) => {
+		const {content, excerpt } = opt.data.root;
+
+		if (description && description !== '') {
+			return description;
+		}
+		else if (excerpt && excerpt !== '') {
+			return excerpt;
+		}
+		else if (content && content !== '' && !opt.data.root.isFront) {
+			return snippetGenerator(content);
+		}
+
+		return metadata.description;
 	});
 
 	// Pass through:

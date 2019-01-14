@@ -112,6 +112,15 @@ pre code {
 .article pre {
   grid-column: 3 / span 2; }
 
+blockquote {
+  font-size: 1.3em; }
+
+cite {
+  text-align: right;
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8em; }
+
 .wrapper--front {
   width: var(--article-width);
   max-width: 100%;

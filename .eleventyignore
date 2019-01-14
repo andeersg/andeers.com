@@ -1,6 +1,6 @@
 _dev
-_drafts
 node_modules
 package.json
 package-lock.json
 gulpfile.js
+_helpers
