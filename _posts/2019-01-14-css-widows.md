@@ -20,7 +20,7 @@ It works the same way in CSS, you control how much of a block (typically a parag
 
 ## Example
 
-``` CSS
+```css
 /* Apply the widows property to the parent element of paragraphs. */
 .paragraphs-container {
   widows: 2;

@@ -1,4 +1,5 @@
 {
 	"author": "Anders Grendstadbakk",
-  "layout": "post"
+  "layout": "post",
+  "isFront": false
 }

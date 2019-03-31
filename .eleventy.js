@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon');
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginRss = require('@11ty/eleventy-plugin-rss');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 const metadata = require('./_data/metadata.json');
 const eleventyVars = require('./_data/eleventy');
@@ -7,6 +8,7 @@ const snippetGenerator = require('./_helpers/excerpt');
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(syntaxHighlight);
 
 	function getPosts(collectionApi) {
 		const globs = [
@@ -25,26 +27,11 @@ module.exports = function(eleventyConfig) {
 		return "tags" in post.data && post.data.tags && post.data.tags.indexOf(tag) > -1;
 	}
 
-	function shouldIncludeDraft(item, includeDrafts) {
-		if (typeof item.data.draft == 'undefined') {
-			return true;
-		}
-		if (item.data.draft && includeDrafts) {
-			return true;
-		}
-		else if (item.data.draft && !includeDrafts) {
-			return false;
-		}
-
-		return false;
-	}
-
 	eleventyConfig.addCollection('posts', function(collection) {
 		return getPosts(collection);
 	});
 
 	eleventyConfig.addCollection('latestPosts', function(collection) {
-		// let posts = collection.getSortedByDate().reverse();
 		let posts = getPosts(collection);
 
 		let items = [];
@@ -60,6 +47,10 @@ module.exports = function(eleventyConfig) {
 	
 	eleventyConfig.addFilter("typeOf", function(value) {
 		return typeof value;
+	});
+
+	eleventyConfig.addFilter("raw", function(options) {
+		return options.fn();
 	});
 
 	eleventyConfig.addFilter('timePosted', date => {
@@ -140,5 +131,6 @@ module.exports = function(eleventyConfig) {
   return {
 		passthroughFileCopy: true,
 		htmlTemplateEngine: 'hbs',
+		markdownTemplateEngine: "hbs"
   };
 };

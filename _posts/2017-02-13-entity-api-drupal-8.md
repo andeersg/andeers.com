@@ -17,7 +17,7 @@ Everything is different from Drupal 7, but if you really want to you can still u
 
 To load a node in Drupal 8 you have to use the Node class:
 
-```PHP
+```php
 use Drupal\node\Entity\Node;
 
 $node = Node::load(1);
@@ -26,7 +26,7 @@ $node = Node::load(1);
 **Update:**
 A good friend of mine [Zaporylie](http://github.com/zaporylie), told me of a better way of loading nodes (and other entities):
 
-```PHP
+```php
 $entity = $container->get('entity_type.manager')->getStorage('entity_type')->load($entity_id);
 ```
 
@@ -36,7 +36,7 @@ Doing it this way makes it easier to extend functionality and override original 
 
 To get values from your node you can either use some of the defined methods:
 
-```PHP
+```php
 $node→getTitle();
 $node→getOwner();
 // There are a lot more of these methods, and you can inspect the with dpm().
@@ -46,7 +46,7 @@ dpm($node);
 
 Or you can just specify the field name:
 
-```PHP
+```php
 $field = $node->field_name;
 ```
 
@@ -54,7 +54,7 @@ Most fields will be an instance of `FieldItemList`, but images and attachments f
 
 There are multiple ways you can get the field values, in this example the field is a formated text field (with format and value).
 
-```PHP
+```php
 // Array of values, if you don't have multiple values it will be an array with one item.
 $value = $field->getValue();
 echo 'My value is: "' . $value[0]['value'] . '", it uses the format: ' . $value[0]['format'];
@@ -70,7 +70,7 @@ $value->format; // The format.
 
 To update a node you can use the set method of the node class:
 
-```PHP
+```php
 $node->set('field_text', [
   'format' => 'full_html',
   'value' => '<p>Updated text is better than old text.</p>',
@@ -79,7 +79,7 @@ $node->set('field_text', [
 
 You can also update values directly like this:
 
-```PHP
+```php
 $node->body->value = 'body';
 $node->body->format = 'full_html';
 ```
@@ -88,7 +88,7 @@ But in my opinion it’s much cleaner to use the set method.
 
 To actually store your changes you have to call the save method:
 
-```PHP
+```php
 $node->save();
 ```
 
@@ -96,7 +96,7 @@ $node->save();
 
 To create a new entity you have to use the static method create:
 
-```PHP
+```php
 $node = Node::create([
   'title' => 'My programmatically created node is amazing',
   'created' => time(),
@@ -117,7 +117,7 @@ And after creating the node object you have to save it with the save method.
 
 Deleting a entity is quite easy. You just need to call the delete method.
 
-```PHP
+```php
 $node->delete();
 ```
 

@@ -14,7 +14,7 @@ Every website that showcases code samples need some syntax highlighting, but not
 
 To optimize this I found a [simple lazy-load function](https://davidwalsh.name/javascript-loader "Lazyload script by David Walsh") created by David Walsh. It allows you to load CSS and JavaScript after the rest of the page has loaded. To only load prism.js when there is code to highlight I have this simple snippet
 
-```Javascript
+```javascript
 if (document.querySelectorAll('pre').length) {
   load.js('/assets/js/prism.js', function() {
     Prism.highlightAll();
@@ -30,7 +30,7 @@ But then I came across this newer article from The Filament Group where they hav
 
 By using this approach you don’t have to base64-encode your font files or do anything else with the fonts. Just define them as usual in `@font-face`, and split your `font-family` declaration into two blocks, the regular body and one with a special class.
 
-```CSS
+```css
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -41,7 +41,7 @@ body {
 
 Then you can use a [FontFaceObserver library](https://github.com/bramstein/fontfaceobserver "Bram Stein’s FontFaceObserver script") to load the fonts and append the special class to your page. By doing it this way, the class is only appended to the page when the font is ready to use, so there should be no FOIT at all.
 
-```Javascript
+```javascript
 if(typeof Promise !== "undefined" && Promise.toString().indexOf("[native code]") !== -1) {
   if (localStorage.webfontsLoaded) {
     document.documentElement.className += ' loaded-fonts';
@@ -75,7 +75,7 @@ Inside that folder I can put any file that exists in my Jekyll folder, like the 
 
 In the `_pre_build` folder I can have html files with un-minified scripts and then let Gulp minify them and move them to the “real” folders that Jekyll uses.
 
-```Javascript
+```javascript
 var minifyOptions = {
   jsSelector: 'script[data-minify="true"]',
   cssSelector: 'style[data-minify="true"]',

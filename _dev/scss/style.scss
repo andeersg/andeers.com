@@ -1,6 +1,7 @@
 @import 'base';
 
 @import 'grids';
+@import 'generic/okaida';
 @import 'components/header';
 @import 'components/article';
 @import 'components/sections';
@@ -63,18 +64,18 @@ footer {
   }
 }
 
-.tag {
-  margin-left: 10px;
-  display: inline-block;
-  color: var(--theme-color);
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 700;
-}
-.tag::before {
-  content: '•';
-  margin-right: 10px;
-  color: #333;
-}
+// .tag {
+//   margin-left: 10px;
+//   display: inline-block;
+//   color: var(--theme-color);
+//   font-family: 'IBM Plex Mono', monospace;
+//   font-weight: 700;
+// }
+// .tag::before {
+//   content: '•';
+//   margin-right: 10px;
+//   color: #333;
+// }
 .outdated {
   padding: 20px;
   font-size: 0.9em;
