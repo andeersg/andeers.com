@@ -1,47 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    {{#if eleventy.production }}
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23774700-2"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-23774700-2');
-      </script>
-    {{/if}}
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{pageTitle title}}</title>
-    <meta name="description" content="{{pageDescription description}}">
-    <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }} Feed" href="{{ metadata.feed.url }}" />
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__inside">
-        <h1 class="site-name header__title"><a href="/">Anders Grendstadbakk</a></h1>
-        {{!-- <p class="subtitle">is a web developer++</p> --}}
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/articles">Articles</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about">About</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+---
+layout: html
+---
+{{> header}}
     
-    {{{ content }}}
+{{{ content }}}
     
-    <footer class="site-footer">
-      <p>© 2019 <strong>Anders Grendstadbakk</strong></p>
-    </footer>
-  </body>
-</html>
-
+{{> footer}}

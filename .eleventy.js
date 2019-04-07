@@ -31,6 +31,17 @@ module.exports = function(eleventyConfig) {
 		return getPosts(collection);
 	});
 
+	/**
+	 * All items that should have a generated image.
+	 * 
+	 * Inspired by https://github.com/philhawksworth/hawksworx.com
+	 */
+	eleventyConfig.addCollection('cards', function(collection) {
+		return collection.getAll().filter(function(item) {
+      return "card" in item.data;
+		});
+	});
+
 	eleventyConfig.addCollection('latestPosts', function(collection) {
 		let posts = getPosts(collection);
 

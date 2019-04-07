@@ -1,0 +1,9 @@
+.menu {
+  display: none; }
+
+.card__body {
+  padding-left: 150px;
+  font-size: 35px; }
+
+.card .header__inside {
+  padding-left: 150px; }

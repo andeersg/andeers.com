@@ -174,7 +174,8 @@ pre[class*="language-"] {
   cursor: help; }
 
 .header {
-  background-color: #f4f2f0; }
+  background-color: #f4f2f0;
+  margin-bottom: 50px; }
   .header__inside {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -309,7 +310,8 @@ cite {
   background-color: #f4f2f0;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-top: 50px; }
 
 .archive-list {
   list-style-type: none;
