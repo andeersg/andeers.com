@@ -342,6 +342,9 @@ cite {
   width: 60px;
   display: inline-block; }
 
+.hidden {
+  display: none; }
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;

@@ -12,19 +12,19 @@
         gtag('config', 'UA-23774700-2');
       </script>
     {{/if}}
-    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{pageTitle title}}</title>
     <meta name="description" content="{{pageDescription description}}">
     <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }} Feed" href="{{ metadata.feed.url }}" />
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css" />
     {{#each styles}}
     <link rel="stylesheet" href="{{this}}" />
     {{/each}}
   </head>
   <body>
+    <a href="#content" class="hidden">Jump to main content</a>
     {{{content}}}
   </body>
 </html>
