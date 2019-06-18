@@ -60,6 +60,10 @@ module.exports = function(eleventyConfig) {
 		return typeof value;
 	});
 
+	eleventyConfig.addFilter('stringify', function(value) {
+		return JSON.stringify(value);
+	});
+
 	eleventyConfig.addFilter("raw", function(options) {
 		return options.fn();
 	});

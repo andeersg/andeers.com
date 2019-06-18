@@ -16,9 +16,17 @@ body {
   font-size: 18px;
   background: #fdfbfb;
   font-weight: 300;
+  min-height: 100vh;
   border-top: 6px solid var(--theme-color);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  grid-template-areas: "header" "content" "footer";
+  grid-template-rows: auto 1fr auto; }
+
+main {
+  outline: none;
+  grid-area: "content"; }
 
 a {
   color: inherit;
@@ -51,6 +59,44 @@ code {
 
 pre code {
   background-color: transparent; }
+
+strong {
+  font-weight: 700; }
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.line-numbers .line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber; }
+
+.line-numbers .line-numbers-rows > span::before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right; }
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber; }
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit; }
 
 .grid {
   display: grid; }
@@ -175,7 +221,8 @@ pre[class*="language-"] {
 
 .header {
   background-color: #f4f2f0;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  grid-area: "header"; }
   .header__inside {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -307,11 +354,26 @@ cite {
   margin-bottom: 50px; }
 
 .site-footer {
-  background-color: #f4f2f0;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 50px; }
+  grid-area: "footer";
+  border-top: 1px solid #e9e9e9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  font-size: 0.95em; }
+  .site-footer__item {
+    margin-right: 30px;
+    margin-bottom: 0; }
+  .site-footer a {
+    border-bottom: 1px solid transparent;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    transition: all 0.3s ease; }
+    .site-footer a:hover {
+      border-color: #333;
+      color: black; }
 
 .archive-list {
   list-style-type: none;
@@ -342,8 +404,36 @@ cite {
   width: 60px;
   display: inline-block; }
 
+.svg-map-wrapper svg {
+  max-width: 100%;
+  height: auto; }
+
+.svg-map-wrapper .visited {
+  fill: green !important; }
+
 .hidden {
   display: none; }
+
+.skip-to-content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  padding: 5px 5px 5px 5px;
+  display: block;
+  top: -10px; }
+  .skip-to-content:focus {
+    width: auto;
+    height: auto;
+    position: absolute;
+    color: #ffffff;
+    z-index: 11;
+    background-color: #000000;
+    border-radius: 3px;
+    top: 10px;
+    left: 10px; }
 
 .wrapper {
   margin-left: auto;

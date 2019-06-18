@@ -15,6 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{pageTitle title}}</title>
+    <meta name="author" content="{{ metadata.author.name }}" />
     <meta name="description" content="{{pageDescription description}}">
     <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }} Feed" href="{{ metadata.feed.url }}" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
     {{/each}}
   </head>
   <body>
-    <a href="#content" class="hidden">Jump to main content</a>
+    <a href="#content" class="hidden skip-to-content">Jump to main content</a>
     {{{content}}}
   </body>
 </html>

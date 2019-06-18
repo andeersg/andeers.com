@@ -1,6 +1,7 @@
 .header {
   background-color: #f4f2f0;
   margin-bottom: 50px;
+  grid-area: "header";
 
   &__inside {
     display: grid;

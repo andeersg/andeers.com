@@ -1,0 +1,9 @@
+.svg-map-wrapper {
+  svg {
+    max-width: 100%;
+    height: auto;
+  } 
+  .visited {
+    fill: green !important;
+  }
+}

@@ -11,9 +11,21 @@ body {
   font-size: 18px;
   background: #fdfbfb;
   font-weight: 300;
+  min-height: 100vh;
   border-top: 6px solid var(--theme-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: grid;
+  grid-template-areas: "header"
+  "content"
+  "footer";
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  outline: none;
+  grid-area: "content";
 }
 
 a {
@@ -50,4 +62,46 @@ code {
 }
 pre code {
   background-color: transparent;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.line-numbers {
+  .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+  }
+  .line-numbers-rows > span::before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+}
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
 }
