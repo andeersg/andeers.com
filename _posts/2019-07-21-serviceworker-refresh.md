@@ -1,6 +1,9 @@
 ---
 title: 'Refresh Service Worker'
 permalink: /2019/07/service-worker-refresh/
+tags:
+  - JavaScript
+  - Service Worker
 ---
 
 Have you ever enabled a service worker and then realised that your updates are not showing because of caching. I have.
