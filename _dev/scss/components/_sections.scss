@@ -7,7 +7,6 @@
 
 .section {
   padding-top: 40px;
-  // grid-column: 1 / -1;
   margin-bottom: 40px;
   @media screen and (max-width: 600px) {
     padding-left: 10px;
@@ -21,7 +20,7 @@
   margin-bottom: 20px;
   line-height: 1;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   grid-column: 1 / -1;
 }
