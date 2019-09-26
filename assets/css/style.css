@@ -38,7 +38,7 @@ a {
   a:hover {
     color: var(--theme-color); }
 
-p {
+p, ul {
   margin-top: 0;
   margin-bottom: 20px;
   color: #454545; }
