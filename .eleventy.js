@@ -7,9 +7,16 @@ const eleventyVars = require('./_data/eleventy');
 const snippetGenerator = require('./_helpers/excerpt');
 
 module.exports = function(eleventyConfig) {
+
+	/*
+	 * Plugins.
+	 */
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(syntaxHighlight);
 
+	/**
+	 * Helper to return correct posts.
+	 */
 	function getPosts(collectionApi) {
 		const globs = [
 			'./_posts/*',
@@ -42,6 +49,11 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	/**
+	 * Show a specified amount of posts.
+	 * 
+	 * @NOTE Could be removed and the regular posts can be used with a limit.
+	 */
 	eleventyConfig.addCollection('latestPosts', function(collection) {
 		let posts = getPosts(collection);
 
@@ -49,25 +61,48 @@ module.exports = function(eleventyConfig) {
 		for( let item of posts ) {
 			if( (!!item.inputPath.match(/\/_posts\//) || !!item.inputPath.match(/\/_drafts\//)) && !hasTag(item, "external") ) {
 				items.push( item );
-				if( items.length >= 5 ) {
+				if( items.length >= 2 ) {
 					return items;
 				}
 			}
 		}
 	});
 	
+	/*
+	 * The filter section.
+	 */
+
+
+	/**
+	 * Print the type of input variable.
+	 * 
+	 * Used mostly for debugging.
+	 */
 	eleventyConfig.addFilter("typeOf", function(value) {
 		return typeof value;
 	});
 
+	/**
+	 * Print a stringified version of input.
+	 * 
+	 * Used mostly for debugging.
+	 */
 	eleventyConfig.addFilter('stringify', function(value) {
 		return JSON.stringify(value);
 	});
 
+	/**
+	 * Raw filter.
+	 * 
+	 * Nice for showing code samples of the template language used.
+	 */
 	eleventyConfig.addFilter("raw", function(options) {
 		return options.fn();
 	});
 
+	/**
+	 * Show post date in relative time.
+	 */
 	eleventyConfig.addFilter('timePosted', date => {
 		let numDays = ((Date.now() - date) / (1000 * 60 * 60 * 24));
 		let daysPosted = Math.round( parseFloat( numDays ) );
@@ -80,14 +115,38 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
+	/**
+	 * Print the date in a specific format.
+	 * 
+	 * @NOTE Deprecate and move to formatDate function.
+	 */
 	eleventyConfig.addFilter('readableDate', dateObj => {
-		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
+		const dt = DateTime.fromJSDate(dateObj);
+		dt.setZone('Europe/Berlin');
+		return dt.toFormat('LLLL dd, yyyy');
 	});
 
+	/**
+	 * Print the date in a format.
+	 */
+	eleventyConfig.addFilter('formatDate', (date, format = 'LLLL dd, yyyy') => {
+		const dt = DateTime.fromJSDate(date);
+		dt.setZone('Europe/Berlin');
+		return dt.toFormat(format);
+	});
+
+	/**
+	 * Get the year of a date object.
+	 * 
+	 * @NOTE Could also be deprecated.
+	 */
 	eleventyConfig.addFilter('getYear', dateObj => {
 		return DateTime.fromJSDate(dateObj).year;
 	});
 
+	/**
+	 * Groups a array of posts by year.
+	 */
 	eleventyConfig.addFilter('group_by_year', function(context, options) {
     const yearPosts = {};
 		let ret = "";
@@ -111,10 +170,16 @@ module.exports = function(eleventyConfig) {
     return ret;
 	});
 
+	/**
+	 * Print absolute url.
+	 */
 	eleventyConfig.addFilter('getAbsoluteUrl', path => {
 		return `${metadata.url}${path}`;
 	});
 
+	/**
+	 * Helper for page title, looks in different places.
+	 */
 	eleventyConfig.addFilter('pageTitle', title => {
 		if (title && title !== '') {
 			return `${title} | ${metadata.title}`;
@@ -122,6 +187,9 @@ module.exports = function(eleventyConfig) {
 		return metadata.title;
 	});
 
+	/**
+	 * Helper for page description.
+	 */
 	eleventyConfig.addFilter('pageDescription', (description, opt) => {
 		const {content, excerpt } = opt.data.root;
 

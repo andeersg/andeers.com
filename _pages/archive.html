@@ -4,21 +4,17 @@ permalink: /articles/
 layout: main
 description: "A collection of all my articles"
 ---
-<div class="archive-page">
-    <section class="wrapper--front">
+<div class="archive-page l-grid">
+    <section class="wrapper--front l-grid-narrow">
       <h1 class="site-title">Archive</h1>
-      <ul class="archive-list">
       {{#group_by_year collections.posts}}
-          <li class="archive-list__item archive-list__year">{{ year }}</li>
+          <h2 class="archive-list__item archive-list__year">{{ year }}</h2>
           {{#each posts}}
-            <li class="archive-list__item archive-list__post">
-              <h2 class="archive-list__title">
-                <a href="{{ this.url }}">{{ this.data.title }}</a>
-              </h2>
-              <div class="latest__time">{{readableDate this.date}}</div>
-            </li>
+            <div class="archive-item">
+              <a class="archive-item__link" href="{{ this.url }}">{{ this.data.title }}</a>
+              <div class="archive-item__date">{{formatDate this.date "dd.MM.yy"}}</div>
+            </div>
           {{/each}}
       {{/group_by_year}}
-      </ul>
     </section>
   </div>
