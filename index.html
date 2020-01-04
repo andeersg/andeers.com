@@ -2,16 +2,31 @@
 layout: main
 isFront: true
 ---
-<div class="wrapper--front">
-  <section class="section">
-    <h2 class="section__title">Recent articles</h2>
+<div class="l-grid intro">
+  <div class="l-grid-wide l-center-vert l-space-between intro__inner">
+    <div>
+      <h1>Hi, I'm <a href="/">Anders Grendstadbakk</a>.</h1>
+      <p>[Placeholder text that should be some kind of introduction]</p>
+    </div>
+    <div class="me">
+      <div class="me__img">
+        <img src="/assets/anders.jpg" class="me__picture" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="l-grid section latest">
+  <div class="l-grid-wide">
+    <h2 class="section__title">Latest writings</h2>
+    <div class="l-split">
     {{#each collections.latestPosts}}
-      <article class="latest">
-        <div class="latest__time">{{readableDate this.date}}</div>
-        <h3 class="latest__title">
-          <a class="latest__link" href="{{this.url}}">{{this.data.title}}</a>
-        </h3>
+      <article class="recent-post">
+        <h3 class="recent-post__title"><a class="latest__link" href="{{this.url}}">{{this.data.title}}</a></h3>
+        <p class="recent-post__tldr">{{this.data.tldr}}</p>
+        <p class="recent-post__meta">{{readableDate this.date}}</p>
       </article>
     {{/each}}
-  </section>
-</div>
+  </div>
+  </div>
+</section>

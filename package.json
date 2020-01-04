@@ -1,6 +1,6 @@
 {
   "name": "andeers2018",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
@@ -14,8 +14,7 @@
   "devDependencies": {
     "autoprefixer": "^9.4.4",
     "gulp": "^4.0.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-postcss": "^8.0.0"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.7.1",
@@ -23,6 +22,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.1",
     "concurrently": "^4.1.0",
     "excerpts": "0.0.3",
+    "gulp-sass": "^4.0.2",
     "luxon": "^1.10.0"
   }
 }

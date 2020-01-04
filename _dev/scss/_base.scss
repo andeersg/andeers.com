@@ -1,107 +1,23 @@
-// Keep the base styling here:
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 18px;
-  background: #fdfbfb;
-  font-weight: 300;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  border-top: 6px solid var(--theme-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  display: grid;
-  grid-template-areas: "header"
-  "content"
-  "footer";
-  grid-template-rows: auto 1fr auto;
-}
-
-main {
-  outline: none;
-  grid-area: "content";
 }
 
 a {
-  color: inherit;
-  text-decoration: underline;
-  -webkit-text-decoration-color: var(--theme-color);
-  text-decoration-color: var(--theme-color);
-  transition: color 0.3s ease;
-  font-weight: 500;
+  transition: color ease 0.3s;
   &:hover {
-    color: var(--theme-color);
+    color: var(--color-theme);
   }
-}
-p, ul {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #454545;
-}
-
-pre {
-  background-color: #333;
-  color: #FFF;
-  font-family: monospace;
-  font-size: 13px;
-  padding: 20px;
-  overflow-x: scroll;
-}
-
-code {
-  background-color: #EEE;
-  font-size: 15px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-pre code {
-  background-color: transparent;
-}
-
-strong {
-  font-weight: 700;
-}
-
-.line-numbers {
-  .line-numbers-rows {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    font-size: 100%;
-    left: -3.8em;
-    width: 3em;
-    letter-spacing: -1px;
-    border-right: 1px solid #999;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .line-numbers-rows > span {
-    pointer-events: none;
-    display: block;
-    counter-increment: linenumber;
-  }
-  .line-numbers-rows > span::before {
-    content: counter(linenumber);
-    color: #999;
-    display: block;
-    padding-right: 0.8em;
-    text-align: right;
-}
-}
-pre[class*="language-"].line-numbers {
-  position: relative;
-  padding-left: 3.8em;
-  counter-reset: linenumber;
-}
-pre[class*="language-"].line-numbers > code {
-  position: relative;
-  white-space: inherit;
 }

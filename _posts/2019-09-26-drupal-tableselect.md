@@ -1,6 +1,7 @@
 ---
 title: 'Disable row in Drupal tableselect'
 permalink: /2019/09/drupal-disable-tableselect-row/
+tldr: How to make a tableselect row unselectable.
 tags:
   - Drupal
 ---
