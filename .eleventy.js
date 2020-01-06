@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
@@ -21,13 +23,37 @@ module.exports = function(eleventyConfig) {
 		const globs = [
 			'./_posts/*',
 		];
-		if (eleventyVars.env == 'development') {
-			globs.push('./_drafts/*');
-		}
+		const now = new Date();
 
-		return collectionApi.getFilteredByGlob(globs).reverse().filter(function(item) {
-			return !!item.data.permalink;
-		});
+		const drafts = (item) => {
+			if (!eleventyVars.development && item.data.draft) {
+				// If not development, and draft is true, skip.
+				return false
+			}
+			// Return everything by default.
+			return true;
+		};
+		const future = (item) => {
+			if (item.date <= now) {
+				return true;
+			}
+
+			if (eleventyVars.development) {
+				// If we get here date is in future, return true if development.
+				return true;
+			}
+
+			return false;
+		};
+
+		// Filter future dates if not development
+		// Remove draft folder and filter on property draft
+
+		return collectionApi.getFilteredByGlob(globs)
+			.filter(item => !!item.data.permalink)
+			.filter(drafts)
+			.filter(future)
+			.reverse();
 	}
 
 	function hasTag(post, tag) {
