@@ -7,6 +7,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const metadata = require('./_data/metadata.json');
 const eleventyVars = require('./_data/eleventy');
 const snippetGenerator = require('./_helpers/excerpt');
+const { addLanguageAttribute } = require('./_helpers/transforms');
 
 module.exports = function(eleventyConfig) {
 
@@ -15,6 +16,13 @@ module.exports = function(eleventyConfig) {
 	 */
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(syntaxHighlight);
+
+	eleventyConfig.addTransform("pre-language", addLanguageAttribute);
+
+	// Enable quiet mode in production.
+	if (eleventyVars.production) {
+		eleventyConfig.setQuietMode(true);
+	}
 
 	/**
 	 * Helper to return correct posts.
@@ -87,7 +95,7 @@ module.exports = function(eleventyConfig) {
 		for( let item of posts ) {
 			if( (!!item.inputPath.match(/\/_posts\//) || !!item.inputPath.match(/\/_drafts\//)) && !hasTag(item, "external") ) {
 				items.push( item );
-				if( items.length >= 2 ) {
+				if( items.length >= 4 ) {
 					return items;
 				}
 			}
@@ -236,6 +244,10 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('assets');
 	eleventyConfig.addPassthroughCopy('wp-content');
 	eleventyConfig.addPassthroughCopy('favicon.ico');
+
+	eleventyConfig.setBrowserSyncConfig({
+    port: process.env.PORT || '8080',
+  });
 
   return {
 		passthroughFileCopy: true,

@@ -11,7 +11,9 @@
   --color-text: #18181c;
   --color-background: #ffffff; }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box; }
 
 body {
@@ -21,11 +23,15 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   min-height: 100vh; }
 
 a {
+  -webkit-transition: color ease 0.3s;
   transition: color ease 0.3s; }
   a:hover {
     color: var(--color-theme); }
@@ -142,10 +148,12 @@ pre[class*="language-"] {
 
 header,
 footer {
-  flex: none; }
+  -webkit-box-flex: 0;
+          flex: none; }
 
 main {
-  flex: 1 0 auto;
+  -webkit-box-flex: 1;
+          flex: 1 0 auto;
   outline: none; }
 
 a {
@@ -172,16 +180,22 @@ a {
   padding-bottom: 20px; }
 
 .l-centered {
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
 
 .l-center-vert {
+  display: -webkit-box;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+          align-items: center; }
 
 .l-space-between {
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
 
 .l-split {
   display: grid;
@@ -191,8 +205,10 @@ a {
   display: none; }
 
 .header {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
 
 .site-name {
   font-weight: 400;
@@ -203,6 +219,7 @@ a {
     display: block; }
 
 .primary-nav {
+  display: -webkit-box;
   display: flex; }
 
 .primary-nav__item {
@@ -232,7 +249,9 @@ a {
       height: auto; } }
   @media screen and (max-width: 800px) {
     .intro__inner {
-      flex-direction: column; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
 
 .intro h1 {
   font-weight: 300;
@@ -243,6 +262,7 @@ a {
   margin-top: 0; }
 
 .intro a {
+  -webkit-transition: color ease 0.3s;
   transition: color ease 0.3s; }
 
 .intro a:hover {
@@ -251,9 +271,12 @@ a {
 .me {
   width: 300px;
   height: 300px;
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   position: relative;
   z-index: 1; }
   @media screen and (max-width: 800px) {
@@ -263,8 +286,10 @@ a {
   .me__img {
     position: relative;
     width: 220px;
-    height: 260px;
     z-index: 3; }
+    .me__img:hover::before {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
     @media screen and (max-width: 800px) {
       .me__img {
         width: 160px;
@@ -274,13 +299,18 @@ a {
       position: absolute;
       width: 100%;
       height: 100%;
+      -webkit-transition: -webkit-transform ease 0.3s;
+      transition: -webkit-transform ease 0.3s;
+      transition: transform ease 0.3s;
+      transition: transform ease 0.3s, -webkit-transform ease 0.3s;
       -webkit-transform: translate(20px, 20px);
               transform: translate(20px, 20px);
       border: 3px solid var(--color-theme);
       z-index: 2; }
   .me__picture {
     max-width: 100%;
-    max-height: auto; }
+    max-height: auto;
+    display: block; }
 
 .latest {
   /* background-color: #2d2d42; */ }
@@ -307,11 +337,15 @@ a {
   font-size: 14px; }
 
 .site-footer__inner {
+  display: -webkit-box;
   display: flex; }
 
 .site-footer__item {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   margin-right: 25px; }
 
 .site-footer__item:last-child {
@@ -335,12 +369,14 @@ a {
   font-size: 0.8em; }
 
 .archive-item {
+  display: -webkit-box;
   display: flex; }
   .archive-item__date {
     font-family: var(--font-mono);
     margin-right: 20px;
     color: #868686;
-    order: -1; }
+    -webkit-box-ordinal-group: 0;
+            order: -1; }
 
 .site-title {
   font-size: 2.5em; }

@@ -40,8 +40,10 @@
   &__img {
     position: relative;
     width: 220px;
-    height: 260px;
     z-index: 3;
+    &:hover::before {
+      transform: translate(0, 0);
+    }
     @media screen and (max-width: 800px) {
       width: 160px;
       height: 160px;
@@ -51,6 +53,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      transition: transform ease 0.3s;
       transform: translate(20px, 20px);
       border: 3px solid var(--color-theme);
       z-index: 2;
@@ -59,5 +62,6 @@
   &__picture {
     max-width: 100%;
     max-height: auto;
+    display: block;
   }
 }
