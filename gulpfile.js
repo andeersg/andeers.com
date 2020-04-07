@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 const paths = {
   styles: {
@@ -26,6 +27,7 @@ function style(){
     .pipe(sass()).on('error', sass.logError)
     .pipe(postcss([
       autoprefixer(),
+      cssnano({preset: 'default'}),
     ]))
     // What is the destination for the compiled file?
     .pipe(gulp.dest(paths.styles.dest));

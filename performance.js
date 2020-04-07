@@ -4,7 +4,7 @@ const PerfLeaderboard = require("performance-leaderboard");
 
 	let urls = [
     "https://andeers.com",
-    "http://localhost:8081"
+    "http://localhost:8082"
 	];
 
 	console.log( await PerfLeaderboard(urls) );

@@ -170,6 +170,15 @@ module.exports = function(eleventyConfig) {
 	});
 
 	/**
+	 * Print current date.
+	 */
+	eleventyConfig.addFilter('currentDate', (format = 'LLLL dd, yyyy') => {
+		const dt = DateTime.fromJSDate(new Date());
+		dt.setZone('Europe/Berlin');
+		return dt.toFormat(format);
+	});
+
+	/**
 	 * Get the year of a date object.
 	 * 
 	 * @NOTE Could also be deprecated.

@@ -13,7 +13,7 @@
   --color-background: #ffffff;
 }
 
-
+@import 'fonts';
 @import 'base';
 @import 'prism';
 
@@ -141,11 +141,15 @@ a {
 }
 .site-footer__inner {
   display: flex;
+  justify-content: flex-start;
 }
 .site-footer__item {
   display: flex;
   flex-direction: column;
   margin-right: 25px;
+  &--pull {
+    margin-left: auto;
+  }
 }
 .site-footer__item:last-child {
   margin-right: 0;
