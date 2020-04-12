@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const fs = require('fs');
 const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
@@ -106,6 +107,14 @@ module.exports = function(eleventyConfig) {
 	 * The filter section.
 	 */
 
+
+	/**
+	 * Print content of file.
+	 */
+	eleventyConfig.addFilter('printFile', (path) => {
+		const content = fs.readFileSync(__dirname + path, 'utf8');
+		return content;
+	});
 
 	/**
 	 * Print the type of input variable.
