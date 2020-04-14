@@ -1,8 +1,4 @@
-# Andeersg.github.io
-[![Build Status](https://travis-ci.org/andeersg/andeers.com.svg?branch=master)](https://travis-ci.org/andeersg/andeers.com)
+# andeers.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/325f8bae-39e1-4133-812f-4e8a243cddf6/deploy-status)](https://app.netlify.com/sites/pest-exterminator-pearl-58853/deploys)
 
-## Todos
-
-* Make it responsive
-* Add a service worker
-* Create a /now page
+Built with 11ty.
