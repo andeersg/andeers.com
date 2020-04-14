@@ -11,7 +11,7 @@ In Jekyll you placed drafts in a separate folder called `_drafts` and when you b
 I have gone a different way in my Eleventy site, and keep the drafts in the same folder (`_posts`) as the published content. To mark something as draft I add it to the front matter: `draft: true`.
 Combined with that I have this function in `.elevent.js`:
 
-These functions does things based on environment, you can read how to add environment variables to Eleventy in [this other post I wrote](https://andeers.com/2019/03/eleventy-essentials/ "Eleventy Essentials on Andeers.com").
+These functions do things based on environment, you can read how to add environment variables to Eleventy in [this other post I wrote](https://andeers.com/2019/03/eleventy-essentials/ "Eleventy Essentials on Andeers.com").
 
 ``` js
 const drafts = (item) => {
@@ -23,7 +23,7 @@ const drafts = (item) => {
   return true;
 };
 ```
-It's a filter function that skips drafts if the environment is not development.
+This function is used as a array filter callback to skip the drafts if the current environment is not development.
 
 ## Scheduled publishing
 

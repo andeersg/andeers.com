@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  margin-top: 40px;
+}
+
 .l-grid {
   display: grid;
   grid-template-columns: [full-start] minmax(1rem,1fr) [wide-start] minmax(0,calc((var(--l--grid-width-wide) - var(--l--grid-width-narrow))/2)) [narrow-start] var(--l--grid-width-narrow) [narrow-end] minmax(0,calc((var(--l--grid-width-wide) - var(--l--grid-width-narrow))/2)) [wide-end] minmax(1rem,1fr) [full-end];
@@ -138,6 +142,7 @@ a {
   position: relative;
   font-weight: 400;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 .section__title::after {
   content: '';
