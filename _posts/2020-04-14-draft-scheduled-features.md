@@ -9,7 +9,7 @@ A nice feature I had in Jekyll was drafts and the option to schedule publishing 
 In Jekyll you placed drafts in a separate folder called `_drafts` and when you built the site with the flag `--drafts` they where included.
 
 I have gone a different way in my Eleventy site, and keep the drafts in the same folder (`_posts`) as the published content. To mark something as draft I add it to the front matter: `draft: true`.
-Combined with that I have this function in `.elevent.js`:
+Combined with that I have the following functions in `.elevent.js`.
 
 These functions do things based on environment, you can read how to add environment variables to Eleventy in [this other post I wrote](https://andeers.com/2019/03/eleventy-essentials/ "Eleventy Essentials on Andeers.com").
 
