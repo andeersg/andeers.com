@@ -6,7 +6,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 const metadata = require('./_data/metadata.json');
-const eleventyVars = require('./_data/eleventy');
+const eleventyVars = require('./_data/eleventy')();
 const snippetGenerator = require('./_helpers/excerpt');
 const { addLanguageAttribute } = require('./_helpers/transforms');
 
