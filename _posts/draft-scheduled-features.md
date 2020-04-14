@@ -1,6 +1,5 @@
 ---
 title: "Drafts and scheduled publishing"
-draft: true
 date: 2020-04-14
 tldr: How to enable drafts and scheduled publishing in 11ty.
 permalink: /2020/04/draft-scheduled/
@@ -12,7 +11,7 @@ In Jekyll you placed drafts in a separate folder called `_drafts` and when you b
 I have gone a different way in my Eleventy site, and keep the drafts in the same folder (`_posts`) as the published content. To mark something as draft I add it to the front matter: `draft: true`.
 Combined with that I have this function in `.elevent.js`:
 
-Check out [this other post I wrote](https://andeers.com/2019/03/eleventy-essentials/ "Eleventy Essentials on Andeers.com") for how to handle the environment variables in Eleventy.
+These functions does things based on environment, you can read how to add environment variables to Eleventy in [this other post I wrote](https://andeers.com/2019/03/eleventy-essentials/ "Eleventy Essentials on Andeers.com").
 
 ``` js
 const drafts = (item) => {
