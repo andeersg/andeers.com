@@ -25,7 +25,13 @@ main {
   flex: 1 0 auto;
   outline: none;
 }
-
+code {
+  font-family: monospace;
+  font-size: 0.9em;
+  line-height: 1;
+  background-color: #34343d;
+  padding: 2px;
+}
 
 a {
   color: var(--color-text);
@@ -70,7 +76,18 @@ a {
 }
 
 .skip-to-content {
-  display: none;
+  background-color: #fff;
+  color: var(--color-theme);
+  height: 30px;
+  left: 100px;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0%);
 }
 
 .header {
