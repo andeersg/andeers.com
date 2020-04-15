@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {{#if eleventy.production }}
+    {{#if eleventy.production }}{{#if eleventy.enableGA }}
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23774700-2"></script>
       <script>
@@ -10,7 +10,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-23774700-2');
       </script>
-    {{/if}}
+    {{/if}}{{/if}}
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{pageTitle title}}</title>
@@ -32,5 +32,13 @@
   <body class="light-mode-">
     <a href="#content" class="hidden skip-to-content">Jump to main content</a>
     {{{content}}}
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
   </body>
 </html>
