@@ -18,5 +18,6 @@ module.exports = () => {
     env: env,
     notReady: false,
     time: new Date(),
+    enableGA: false,
   }
 };
