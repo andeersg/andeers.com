@@ -1,9 +1,8 @@
-const {src, dest, watch} = require('gulp');
+const {src, dest, watch, series} = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-const serviceWorker = require('./_tasks/sw');
 
 const paths = {
   styles: {
@@ -26,6 +25,11 @@ function style() {
     .pipe(dest(paths.styles.dest));
 }
 
+function serviceWorker() {
+  return src(paths.sw.src)
+    .pipe(dest(paths.sw.dest));
+}
+
 function watcher(){
   watch('_dev/**/*.scss', style);
 }
@@ -33,3 +37,4 @@ function watcher(){
 exports.watch = watcher;
 exports.style = style;
 exports.sw = serviceWorker;
+exports.build = series(style, serviceWorker);
