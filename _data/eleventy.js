@@ -2,16 +2,21 @@
  * @file
  * System variables like environment and similar.
  */
+module.exports = () => {
+  let env = process.env.ELEVENTY_ENV || 'development';
+  const context = process.env.CONTEXT || 'development'; // Variable set by netlify.
 
-module.exports = {
-  production: process.env.ELEVENTY_ENV === 'production',
-  development: process.env.ELEVENTY_ENV === 'development',
-  env: process.env.ELEVENTY_ENV || 'development',
-  includeDrafts: () => {
-    return !!process.argv.filter(i => i == '--include-drafts').length;
-  },
-  notReady: false, // Flag to prevent something from rendering.
-  time: () => {
-    return new Date();
+  // If building previews in netlify I think we want development mode.
+  if (context !== 'production') {
+    env = 'development';
+  }
+
+  return {
+    production: env === 'production',
+    development: env === 'development',
+    context: context,
+    env: env,
+    notReady: false,
+    time: new Date(),
   }
 };
