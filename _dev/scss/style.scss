@@ -209,12 +209,33 @@ h2 {
 
 .site-title {
   font-size: 2.5em;
+  &--with-subtitle {
+    margin-bottom: 5px;
+  }
 }
-
+.site-subtitle {
+  font-size: 1.2em;
+  margin-top: 0;
+}
 
 .draft-tag {
   position: fixed;
   top: 0px;
   right: 0px;
   padding: 20px;
+}
+
+.color-scheme {
+  border: 2px solid #FFF;
+  border-radius: 1em;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  &:hover {
+    width: auto;
+  }
+  svg {
+    width: 1.2em;
+    height: 1.2em;
+  }
 }

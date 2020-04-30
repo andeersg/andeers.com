@@ -4,7 +4,10 @@ layout: main
 <div class="l-grid">
   <article class="l-grid-narrow">
     <header class="post__header">
-      <h1 class="site-title">{{ title }}</h1>
+      <h1 class="site-title{{#if subtitle}} site-title--with-subtitle{{/if}}">{{ title }}</h1>
+      {{#if subtitle}}
+        <h2 class="site-subtitle">{{ subtitle }}</h2>
+      {{/if}}
     </header>
       
     <div class="post__content">
