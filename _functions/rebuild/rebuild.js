@@ -25,6 +25,6 @@ exports.handler = async (event, context) => {
     }
   } catch (err) {
     // Log errors somewhere?
-    return { statusCode: 200, body: '{}' };
+    return { statusCode: 200, body: err.toString() };
   }
 }
