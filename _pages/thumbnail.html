@@ -1,0 +1,31 @@
+---
+permalink: "/thumbnail.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 id="title">Placeholder title</h1>
+    </header>
+
+    <footer>
+      <p>Anders Grendstadbakk</p>
+    </footer>
+  </div>
+  <script>
+    const url = new URL(location.href);
+    const thumbnail = url.searchParams.get('thumbnail');
+    const link = url.searchParams.get('url');
+    // const linkURL = new URL(link);
+    const title = url.searchParams.get('title');
+   
+    document.querySelector('#title').innerText = title;
+  </script>
+</body>
+</html>
