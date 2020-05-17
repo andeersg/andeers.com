@@ -4,3 +4,4 @@ package.json
 package-lock.json
 gulpfile.js
 _helpers
+_functions
