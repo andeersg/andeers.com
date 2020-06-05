@@ -1,6 +1,7 @@
 ---
 title: "How to update to Drupal 9"
 permalink: "2020/06/update-drupal9/"
+date: 2020-06-06
 tldr: How to update an Drupal 8 site to Drupal 9 with Composer.
 ---
 [Drupal 9](https://www.drupal.org/project/drupal/ "Drupal 9 on drupal.org") was launched this week. So if your modules are ready it's time to update.
