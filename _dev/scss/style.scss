@@ -2,6 +2,7 @@
   --color-text: #e1dede;
   --color-background: #18181c;
   --color-theme: #AA3939; /*#ff5277;*/
+  --color-theme-10: lighten(#AA3939, 10%);
 
   --font-mono: 'monospace';
 
@@ -30,12 +31,17 @@ code {
   font-size: 0.9em;
   line-height: 1;
   background-color: #34343d;
-  padding: 2px;
+  color: var(--color-theme);
+  padding: 2px 4px;
 }
 
 a {
   color: var(--color-text);
   text-decoration: none;
+  border-bottom: .1111em solid transparent;
+  &:hover {
+    border-bottom-color: var(--color-theme-10);
+  }
 }
 
 h2 {
@@ -238,4 +244,26 @@ h2 {
     width: 1.2em;
     height: 1.2em;
   }
+}
+
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  margin-bottom: calc(1em + 2vw);
+  gap: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  height: auto;
+}
+.book {
+  display: block;
+}
+.book__title {}
+.book img {
+  height: 270px;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  order: 1;
 }

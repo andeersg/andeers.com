@@ -48,6 +48,10 @@
     @media screen and (max-width: 800px) {
       width: 160px;
       height: 160px;
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
     &::before {
       content: '';
