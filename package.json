@@ -4,9 +4,9 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "ELEVENTY_ENV=production eleventy",
-    "build": "ELEVENTY_ENV=production eleventy && gulp sw",
-    "start": "PORT=8081 concurrently \"eleventy --serve\" \"gulp watch\"",
+    "test": "ELEVENTY_ENV=production ELEVENTY_EXPERIMENTAL=true eleventy",
+    "build": "ELEVENTY_ENV=production ELEVENTY_EXPERIMENTAL=true eleventy && gulp sw",
+    "start": "ELEVENTY_ENV=production ELEVENTY_EXPERIMENTAL=true PORT=8081 concurrently \"eleventy --serve\" \"gulp watch\"",
     "clear": "rm -r ./_site/*"
   },
   "author": "",
@@ -15,7 +15,7 @@
     "express": "^4.17.1"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.10",
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "autoprefixer": "^9.7.6",

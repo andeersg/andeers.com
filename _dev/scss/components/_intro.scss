@@ -1,5 +1,5 @@
 .intro {
-  height: 50vh;
+  height: 30vh;
   @media screen and (max-width: 800px) {
     height: auto;
   }
@@ -13,6 +13,7 @@
 .intro h1 {
   font-weight: 400;
   margin-bottom: 5px;
+  font-size: 42px;
 }
 .intro p {
   font-size: 18px;
@@ -52,28 +53,6 @@
         height: auto;
         width: 100%;
       }
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      transition: transform ease 0.3s;
-      transform: translate(-10px, -10px);
-      background-color: var(--color-theme);
-      z-index: -1;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      transition: transform ease 0.3s;
-      transform: translate(10px, 10px);
-      border: 3px solid var(--color-theme);
-      z-index: 2;
     }
   }
   &__picture {
