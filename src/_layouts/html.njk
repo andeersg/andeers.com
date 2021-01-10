@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | pageTitle }}</title>
+
+    {% include 'meta.njk' %}
+    
+    <style>
+      {{ "/assets/css/style.css" | printFile | safe }}
+    </style>
+    {# {% for style in styles %}
+    <link rel="stylesheet" href="{{style}}" />
+    {% endfor %} #}
+    {{ head }}
+  </head>
+
+  <body class="light-mode-">
+    <a href="#content" class="hidden skip-to-content">Jump to main content</a>
+    {{ content | safe }}
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+    {{ foot }}
+  </body>
+</html>

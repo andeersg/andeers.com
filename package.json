@@ -4,9 +4,10 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "ELEVENTY_ENV=production ELEVENTY_EXPERIMENTAL=true eleventy",
-    "build": "ELEVENTY_ENV=production ELEVENTY_EXPERIMENTAL=true eleventy && gulp sw",
-    "start": "ELEVENTY_ENV=production ELEVENTY_EXPERIMENTAL=true PORT=8081 concurrently \"eleventy --serve\" \"gulp watch\"",
+    "test": "ELEVENTY_ENV=production eleventy",
+    "build": "ELEVENTY_ENV=production eleventy && gulp sw",
+    "start": " PORT=8081 concurrently \"eleventy --serve\" \"gulp watch\"",
+    "dev": "ELEVENTY_ENV=production PORT=8081 eleventy --serve",
     "clear": "rm -r ./_site/*"
   },
   "author": "",
@@ -28,7 +29,9 @@
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
-    "luxon": "^1.23.0"
+    "lodash": "^4.17.20",
+    "luxon": "^1.23.0",
+    "node-fetch": "^2.6.1"
   },
   "browserslist": [
     ">0.2%",

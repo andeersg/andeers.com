@@ -1,6 +1,6 @@
 :root {
   --color-text: #e1dede;
-  --color-background: #18181c;
+  --color-background: #262626; // #18181c;
   --color-theme: #ff6400; // #F6E05E; // #AA3939; /*#ff5277;*/
 
   --color-theme-1: #ff6400;
@@ -144,6 +144,7 @@ h2 {
 } */
 
 @import 'components/intro';
+@import 'components/post';
 
 .latest {
   /* background-color: #2d2d42; */
@@ -229,12 +230,6 @@ h2 {
   margin-top: 0;
 }
 
-.draft-tag {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  padding: 20px;
-}
 
 .color-scheme {
   border: 2px solid #FFF;
@@ -249,26 +244,4 @@ h2 {
     width: 1.2em;
     height: 1.2em;
   }
-}
-
-
-.books {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-  margin-bottom: calc(1em + 2vw);
-  gap: 1.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  height: auto;
-}
-.book {
-  display: block;
-}
-.book__title {}
-.book img {
-  height: 270px;
-  max-width: 100%;
-  display: block;
-  object-fit: contain;
-  order: 1;
 }

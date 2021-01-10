@@ -1,0 +1,41 @@
+.draft-tag {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+}
+
+.post {
+  &__header {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  &__title {
+    font-size: 6rem !important;
+  }
+  &__meta {
+    font-size: 1.25rem;
+  }
+}
+
+.post-grid {
+  max-width: 100%;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50px 20px 1fr 20px 50px;
+  & > * {
+    grid-column: 3;
+  }
+  pre {
+    grid-column: 2 / span 3;
+  }
+}
+
+.markdown {
+  font-size: 1.375rem;
+  > * {
+    margin-bottom: 2rem;
+  }
+}

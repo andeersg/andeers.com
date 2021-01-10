@@ -1,0 +1,26 @@
+---
+layout: main
+---
+<article 
+  id="{{ title | slug }}" 
+  class="post h-entry l-grid" 
+  role="article" 
+  itemscope 
+  itemtype="http://schema.org/BlogPosting" 
+  aria-labelledby="{{ title | slug }}-title"
+>
+  <div class="l-grid-wide">
+  <header class="post__header">
+      <h1 id="{{ title | slug }}-title" class="post__title p-name title site-title" itemprop="headline">{{ title }}</h1>
+      <div class="post__meta">
+        <time class="post__date dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | readableDate }}</time>
+      </div>
+  </header>
+      
+    <div class="post__content markdown post-grid" itemprop="articleBody">
+      {{ content | safe }}
+    </div>
+
+    {% if draft %}<div class="draft-tag">Draft</div>{% endif %}
+  </div>
+</article>

@@ -5,10 +5,10 @@ const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
-const metadata = require('./_data/metadata.json');
-const eleventyVars = require('./_data/eleventy')();
-const snippetGenerator = require('./_helpers/excerpt');
-const { addLanguageAttribute } = require('./_helpers/transforms');
+const metadata = require('./src/_data/metadata.json');
+const eleventyVars = require('./src/_data/eleventy')();
+const snippetGenerator = require('./src/_helpers/excerpt');
+const { addLanguageAttribute } = require('./src/_helpers/transforms');
 
 module.exports = function(eleventyConfig) {
 
@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
    */
   function getPosts(collectionApi) {
     const globs = [
-      './_posts/*',
+      './src/_posts/*',
     ];
     const now = new Date();
 
@@ -166,7 +166,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('readableDate', dateObj => {
     const dt = DateTime.fromJSDate(dateObj);
     dt.setZone('Europe/Berlin');
-    return dt.toFormat('LLLL dd, yyyy');
+    return dt.toFormat('dd LLLL yyyy');
   });
 
   /**
@@ -243,6 +243,10 @@ module.exports = function(eleventyConfig) {
    * Helper for page description.
    */
   eleventyConfig.addFilter('pageDescription', (description, opt) => {
+    if (!opt) {
+      return metadata.description;
+    }
+
     const {content, excerpt } = opt.data.root;
 
     if (description && description !== '') {
@@ -268,8 +272,16 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    dir: {
+      input: 'src',
+      output: '_site',
+      includes: '_includes',
+      layouts: '_layouts',
+      data: '_data'
+  },
     passthroughFileCopy: true,
-    htmlTemplateEngine: 'hbs',
+    templateFormats: ['hbs', 'njk', 'md', '11ty.js'],
+    htmlTemplateEngine: 'njk',
     markdownTemplateEngine: "hbs"
   };
 };
