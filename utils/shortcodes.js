@@ -21,9 +21,4 @@ module.exports = {
     const svg = fs.readFileSync(`${process.cwd()}/${iconFolder}${name}.svg`, 'utf8');
     return svg;
   },
-
-  attributes: function(attributes) {
-    console.log(attributes);
-    return 'attributes';
-  },
 };

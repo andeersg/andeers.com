@@ -104,7 +104,6 @@ module.exports = function(config) {
   config.addShortcode('squiggle', shortcodes.squiggle);
   config.addShortcode('dev', shortcodes.dev);
   config.addShortcode('iconLoader', shortcodes.iconLoader);
-  config.addShortcode('attributes', shortcodes.attributes);
 
   
   // Pass through:
