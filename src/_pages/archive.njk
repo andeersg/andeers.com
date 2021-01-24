@@ -1,0 +1,38 @@
+---
+title: Articles
+permalink: /articles/
+layout: main
+description: "A collection of all my articles"
+---
+
+{% set firstOfYear = true %}
+{% set prevYear = '' %}
+
+<div class="archive-page l-grid">
+    <section class="wrapper--front l-grid-narrow">
+      <h1 class="site-title h1">Archive</h1>
+
+      <ul class="archive-list">
+      {% for post in collections.posts  %}
+        {% set year = post.date | getYear %}
+        {% if year !== prevYear %}
+          {% set prevYear = year %}
+          {% set firstOfYear = true %}
+        {% endif %}
+        {% if firstOfYear %}
+          <li class="archive-list__year">
+            <h2 class="archive-item__title">{{ year }}</h2>
+          </li>
+          {% set firstOfYear = false %}
+        {% endif %}
+
+        <li class="archive-list__item">
+          <a class="archive-item__link" href="{{ post.url }}">
+            <h2 class="archive-item__title">{{ post.data.title }}</h2>
+            <p>{{ post.date | readableDate }}</p>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </section>
+  </div>

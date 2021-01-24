@@ -1,0 +1,5 @@
+<svg height='30px' width='30px' class="hexa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewBox="0 0 187 213" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd">
+  <g>
+    <path class="fil0" d="M98 1c28,17 56,33 85,49 2,2 4,5 4,7l0 99c0,3 -2,6 -5,7 -28,17 -56,33 -84,49 -3,2 -6,2 -9,0 -28,-16 -56,-33 -85,-49 -2,-2 -4,-4 -4,-7l0 -99c0,-3 2,-6 5,-7 28,-16 56,-33 84,-49 3,-1 6,-1 9,0zm-5 17c-25,15 -51,29 -76,44l0 89c25,15 51,30 76,45 26,-15 52,-30 77,-45l0 -89c-25,-15 -51,-29 -77,-44z"></path>
+  </g>
+</svg>

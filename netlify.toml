@@ -1,0 +1,11 @@
+[[redirects]]
+    from = "/feed/feed.xml"
+    to = "/feed.xml"
+    status = 301
+    force = true
+
+[[redirects]]
+    from = "/feed/"
+    to = "/feed.xml"
+    status = 301
+    force = true

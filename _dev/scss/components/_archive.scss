@@ -1,0 +1,30 @@
+.archive-list {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.7;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1.5em 0;
+
+  &__year {
+    grid-column: 1/2;
+  }
+  &__item {
+    grid-column: 2/-1;
+  }
+
+  li {
+    border-top: 1px solid #3f3f3f;
+  }
+}
+
+.archive-item {
+  &__title {
+    line-height: 1.2;
+    margin-bottom: .25rem;
+    font-size: 1.6em;
+    font-variation-settings: "wght" 550;
+    font-weight: normal;
+  }
+}

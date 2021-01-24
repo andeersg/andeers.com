@@ -1,0 +1,25 @@
+.site-footer {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #2d2d2d;
+  font-size: 14px;
+}
+.site-footer__inner {
+  display: flex;
+  justify-content: flex-start;
+}
+.site-footer__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  &--pull {
+    margin-left: auto;
+  }
+}
+.site-footer__item:last-child {
+  margin-right: 0;
+}
+.site-footer a {
+  text-decoration: underline;
+}

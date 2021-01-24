@@ -4,14 +4,14 @@ layout: main
 <div class="l-grid">
   <article class="l-grid-narrow">
     <header class="post__header">
-      <h1 class="site-title{{#if subtitle}} site-title--with-subtitle{{/if}}">{{ title }}</h1>
-      {{#if subtitle}}
+      <h1 class="site-title{{ ' site-title--with-subtitle' if subtitle }}">{{ title }}</h1>
+      {% if subtitle %}
         <h2 class="site-subtitle">{{ subtitle }}</h2>
-      {{/if}}
+      {% endif %}
     </header>
       
     <div class="post__content">
-      {{{ content }}}
+      {{ content | safe }}
     </div>    
   </article>
 </div>
