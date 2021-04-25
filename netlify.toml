@@ -9,3 +9,8 @@
     to = "/feed.xml"
     status = 301
     force = true
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        Permissions-Policy = "interest-cohort=()"
